@@ -3,77 +3,342 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 48;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CB9B8885202C5C02009964C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9B8884202C5C02009964C4 /* AppDelegate.swift */; };
-		CB9B8887202C5C02009964C4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9B8886202C5C02009964C4 /* ViewController.swift */; };
-		CB9B888A202C5C02009964C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB9B8888202C5C02009964C4 /* Main.storyboard */; };
-		CB9B888C202C5C02009964C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB9B888B202C5C02009964C4 /* Assets.xcassets */; };
-		CB9B888F202C5C02009964C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB9B888D202C5C02009964C4 /* LaunchScreen.storyboard */; };
+		69C6D2186800E5FF943B8079 /* Pods_NoSmokingPeopleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BF05978FEE486AE46807E4D /* Pods_NoSmokingPeopleTests.framework */; };
+		6FB94E46425653530A76D51C /* Pods_NoSmokingPeopleUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36DAFCB9135E18B1CA787977 /* Pods_NoSmokingPeopleUITests.framework */; };
+		830B363C1F39818F0045AC90 /* RootPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830B363B1F39818F0045AC90 /* RootPageViewController.swift */; };
+		CB0940E11F3456970078BAA6 /* Manual1_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0940E01F3456970078BAA6 /* Manual1_ViewController.swift */; };
+		CB0940E61F3456DF0078BAA6 /* Manual2_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0940E21F3456DF0078BAA6 /* Manual2_ViewController.swift */; };
+		CB0940E71F3456DF0078BAA6 /* Manual3_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0940E31F3456DF0078BAA6 /* Manual3_ViewController.swift */; };
+		CB0940E81F3456DF0078BAA6 /* Manual4_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0940E41F3456DF0078BAA6 /* Manual4_ViewController.swift */; };
+		CB1342661F1FB94200E1A1AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1342651F1FB94200E1A1AA /* AppDelegate.swift */; };
+		CB1342681F1FB94200E1A1AA /* SmokingCheckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1342671F1FB94200E1A1AA /* SmokingCheckViewController.swift */; };
+		CB13426B1F1FB94200E1A1AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB1342691F1FB94200E1A1AA /* Main.storyboard */; };
+		CB13426D1F1FB94200E1A1AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB13426C1F1FB94200E1A1AA /* Assets.xcassets */; };
+		CB1342701F1FB94200E1A1AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB13426E1F1FB94200E1A1AA /* LaunchScreen.storyboard */; };
+		CB13427B1F1FB94200E1A1AA /* NoSmokingPeopleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB13427A1F1FB94200E1A1AA /* NoSmokingPeopleTests.swift */; };
+		CB1342861F1FB94200E1A1AA /* NoSmokingPeopleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1342851F1FB94200E1A1AA /* NoSmokingPeopleUITests.swift */; };
+		CB194E931F2074CA00D80114 /* WrittenOathViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB194E921F2074CA00D80114 /* WrittenOathViewController.swift */; };
+		CB194E951F21D77300D80114 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB194E941F21D77300D80114 /* LoginViewController.swift */; };
+		CB2C2D441F57EA9D006965F0 /* HealthHeaderCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2C2D431F57EA9D006965F0 /* HealthHeaderCollectionViewCell.swift */; };
+		CB2C2D491F57EFDC006965F0 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2C2D481F57EFDC006965F0 /* SettingViewController.swift */; };
+		CB2C2D4C1F57F002006965F0 /* SettingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2C2D4A1F57F002006965F0 /* SettingTableViewCell.swift */; };
+		CB2C2D4D1F57F002006965F0 /* SettingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB2C2D4B1F57F002006965F0 /* SettingTableViewCell.xib */; };
+		CB2C2D501F57F01B006965F0 /* SettingHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2C2D4E1F57F01B006965F0 /* SettingHeaderTableViewCell.swift */; };
+		CB2C2D511F57F01B006965F0 /* SettingHeaderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB2C2D4F1F57F01B006965F0 /* SettingHeaderTableViewCell.xib */; };
+		CB4A722C2023F11E0052BFDA /* drawerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4A722B2023F11E0052BFDA /* drawerViewController.swift */; };
+		CB64FBAB1F3AB2A100530E16 /* HealthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB64FBAA1F3AB2A100530E16 /* HealthViewController.swift */; };
+		CB64FBAD1F3AB2AE00530E16 /* DiaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB64FBAC1F3AB2AE00530E16 /* DiaryViewController.swift */; };
+		CB64FBAF1F3AB2BC00530E16 /* TipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB64FBAE1F3AB2BC00530E16 /* TipViewController.swift */; };
+		CB9079F51F2C69D1000BF2A6 /* BMHANNA_11yrs_otf.otf in Resources */ = {isa = PBXBuildFile; fileRef = CB9079F41F2C69D1000BF2A6 /* BMHANNA_11yrs_otf.otf */; };
+		CB9079F61F2C69D1000BF2A6 /* BMHANNA_11yrs_otf.otf in Resources */ = {isa = PBXBuildFile; fileRef = CB9079F41F2C69D1000BF2A6 /* BMHANNA_11yrs_otf.otf */; };
+		CB9079F71F2C69D1000BF2A6 /* BMHANNA_11yrs_otf.otf in Resources */ = {isa = PBXBuildFile; fileRef = CB9079F41F2C69D1000BF2A6 /* BMHANNA_11yrs_otf.otf */; };
+		CBA15300202C0A8C000990EF /* MyCustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA152FF202C0A8C000990EF /* MyCustomTextField.swift */; };
+		CBCA95701F572A6F00673630 /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCA956F1F572A6F00673630 /* HomeCollectionViewCell.swift */; };
+		CBCA95721F5738D200673630 /* TipCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCA95711F5738D200673630 /* TipCollectionViewCell.swift */; };
+		CBCA95741F57440600673630 /* HealthCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCA95731F57440600673630 /* HealthCollectionViewCell.swift */; };
+		CBDEA7EB1F39A47700D8F38F /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDEA7EA1F39A47700D8F38F /* Extension.swift */; };
+		CBDFF8FA1F2C6D81005AE38E /* KoPub Dotum_Pro Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = CBDFF8F81F2C6D81005AE38E /* KoPub Dotum_Pro Bold.otf */; };
+		CBDFF8FB1F2C6D81005AE38E /* KoPub Dotum_Pro Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = CBDFF8F81F2C6D81005AE38E /* KoPub Dotum_Pro Bold.otf */; };
+		CBDFF8FC1F2C6D81005AE38E /* KoPub Dotum_Pro Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = CBDFF8F81F2C6D81005AE38E /* KoPub Dotum_Pro Bold.otf */; };
+		CBDFF8FD1F2C6D81005AE38E /* KoPub Dotum_Pro Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = CBDFF8F91F2C6D81005AE38E /* KoPub Dotum_Pro Medium.otf */; };
+		CBDFF8FE1F2C6D81005AE38E /* KoPub Dotum_Pro Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = CBDFF8F91F2C6D81005AE38E /* KoPub Dotum_Pro Medium.otf */; };
+		CBDFF8FF1F2C6D81005AE38E /* KoPub Dotum_Pro Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = CBDFF8F91F2C6D81005AE38E /* KoPub Dotum_Pro Medium.otf */; };
+		CBDFF9011F2C7AA6005AE38E /* KoPub Dotum_Pro Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = CBDFF9001F2C7AA6005AE38E /* KoPub Dotum_Pro Light.otf */; };
+		CBDFF9021F2C7AA6005AE38E /* KoPub Dotum_Pro Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = CBDFF9001F2C7AA6005AE38E /* KoPub Dotum_Pro Light.otf */; };
+		CBDFF9031F2C7AA6005AE38E /* KoPub Dotum_Pro Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = CBDFF9001F2C7AA6005AE38E /* KoPub Dotum_Pro Light.otf */; };
+		CBF826C91F31D182002D4C09 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF826C81F31D182002D4C09 /* HomeViewController.swift */; };
+		EF7AF7EFF34043A48831B769 /* Pods_NoSmokingPeople.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBE0DCF30E971760D2213CA9 /* Pods_NoSmokingPeople.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		CB1342771F1FB94200E1A1AA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB13425A1F1FB94200E1A1AA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CB1342611F1FB94200E1A1AA;
+			remoteInfo = NoSmokingPeople;
+		};
+		CB1342821F1FB94200E1A1AA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB13425A1F1FB94200E1A1AA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CB1342611F1FB94200E1A1AA;
+			remoteInfo = NoSmokingPeople;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
-		CB9B8881202C5C02009964C4 /* NoSmokingPeople.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NoSmokingPeople.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		CB9B8884202C5C02009964C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CB9B8886202C5C02009964C4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CB9B8889202C5C02009964C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		CB9B888B202C5C02009964C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		CB9B888E202C5C02009964C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		CB9B8890202C5C02009964C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0BF05978FEE486AE46807E4D /* Pods_NoSmokingPeopleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NoSmokingPeopleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		36DAFCB9135E18B1CA787977 /* Pods_NoSmokingPeopleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NoSmokingPeopleUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E6EB1C4D60919F083230CF9 /* Pods-NoSmokingPeople.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoSmokingPeople.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NoSmokingPeople/Pods-NoSmokingPeople.debug.xcconfig"; sourceTree = "<group>"; };
+		5706C0B42631E4EDB0ACC877 /* Pods-NoSmokingPeopleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoSmokingPeopleUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NoSmokingPeopleUITests/Pods-NoSmokingPeopleUITests.release.xcconfig"; sourceTree = "<group>"; };
+		6CF9E13E5BEEBD34AC9EFBBD /* Pods-NoSmokingPeopleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoSmokingPeopleUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NoSmokingPeopleUITests/Pods-NoSmokingPeopleUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		830B363B1F39818F0045AC90 /* RootPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootPageViewController.swift; sourceTree = "<group>"; };
+		CB0940E01F3456970078BAA6 /* Manual1_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Manual1_ViewController.swift; sourceTree = "<group>"; };
+		CB0940E21F3456DF0078BAA6 /* Manual2_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Manual2_ViewController.swift; sourceTree = "<group>"; };
+		CB0940E31F3456DF0078BAA6 /* Manual3_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Manual3_ViewController.swift; sourceTree = "<group>"; };
+		CB0940E41F3456DF0078BAA6 /* Manual4_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Manual4_ViewController.swift; sourceTree = "<group>"; };
+		CB1342621F1FB94200E1A1AA /* NoSmokingPeople.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NoSmokingPeople.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB1342651F1FB94200E1A1AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CB1342671F1FB94200E1A1AA /* SmokingCheckViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmokingCheckViewController.swift; sourceTree = "<group>"; };
+		CB13426A1F1FB94200E1A1AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CB13426C1F1FB94200E1A1AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CB13426F1F1FB94200E1A1AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CB1342711F1FB94200E1A1AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB1342761F1FB94200E1A1AA /* NoSmokingPeopleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NoSmokingPeopleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB13427A1F1FB94200E1A1AA /* NoSmokingPeopleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoSmokingPeopleTests.swift; sourceTree = "<group>"; };
+		CB13427C1F1FB94200E1A1AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB1342811F1FB94200E1A1AA /* NoSmokingPeopleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NoSmokingPeopleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB1342851F1FB94200E1A1AA /* NoSmokingPeopleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoSmokingPeopleUITests.swift; sourceTree = "<group>"; };
+		CB1342871F1FB94200E1A1AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB194E921F2074CA00D80114 /* WrittenOathViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WrittenOathViewController.swift; sourceTree = "<group>"; };
+		CB194E941F21D77300D80114 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		CB2C2D431F57EA9D006965F0 /* HealthHeaderCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthHeaderCollectionViewCell.swift; sourceTree = "<group>"; };
+		CB2C2D481F57EFDC006965F0 /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		CB2C2D4A1F57F002006965F0 /* SettingTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingTableViewCell.swift; sourceTree = "<group>"; };
+		CB2C2D4B1F57F002006965F0 /* SettingTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingTableViewCell.xib; sourceTree = "<group>"; };
+		CB2C2D4E1F57F01B006965F0 /* SettingHeaderTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingHeaderTableViewCell.swift; sourceTree = "<group>"; };
+		CB2C2D4F1F57F01B006965F0 /* SettingHeaderTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingHeaderTableViewCell.xib; sourceTree = "<group>"; };
+		CB4A722B2023F11E0052BFDA /* drawerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = drawerViewController.swift; sourceTree = "<group>"; };
+		CB64FBAA1F3AB2A100530E16 /* HealthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthViewController.swift; sourceTree = "<group>"; };
+		CB64FBAC1F3AB2AE00530E16 /* DiaryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiaryViewController.swift; sourceTree = "<group>"; };
+		CB64FBAE1F3AB2BC00530E16 /* TipViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TipViewController.swift; sourceTree = "<group>"; };
+		CB9079F41F2C69D1000BF2A6 /* BMHANNA_11yrs_otf.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = BMHANNA_11yrs_otf.otf; sourceTree = "<group>"; };
+		CBA152FF202C0A8C000990EF /* MyCustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCustomTextField.swift; sourceTree = "<group>"; };
+		CBCA956F1F572A6F00673630 /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
+		CBCA95711F5738D200673630 /* TipCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TipCollectionViewCell.swift; sourceTree = "<group>"; };
+		CBCA95731F57440600673630 /* HealthCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthCollectionViewCell.swift; sourceTree = "<group>"; };
+		CBDEA7EA1F39A47700D8F38F /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		CBDFF8F81F2C6D81005AE38E /* KoPub Dotum_Pro Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "KoPub Dotum_Pro Bold.otf"; sourceTree = "<group>"; };
+		CBDFF8F91F2C6D81005AE38E /* KoPub Dotum_Pro Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "KoPub Dotum_Pro Medium.otf"; sourceTree = "<group>"; };
+		CBDFF9001F2C7AA6005AE38E /* KoPub Dotum_Pro Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "KoPub Dotum_Pro Light.otf"; sourceTree = "<group>"; };
+		CBF826C81F31D182002D4C09 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		DB7E69E3B6CAE6B47632859D /* Pods-NoSmokingPeople.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoSmokingPeople.release.xcconfig"; path = "Pods/Target Support Files/Pods-NoSmokingPeople/Pods-NoSmokingPeople.release.xcconfig"; sourceTree = "<group>"; };
+		DBE0DCF30E971760D2213CA9 /* Pods_NoSmokingPeople.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NoSmokingPeople.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCBCC07EEBA8168863AFD9EF /* Pods-NoSmokingPeopleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoSmokingPeopleTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NoSmokingPeopleTests/Pods-NoSmokingPeopleTests.debug.xcconfig"; sourceTree = "<group>"; };
+		FBBFB43B8FCF7E7409C6B954 /* Pods-NoSmokingPeopleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoSmokingPeopleTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NoSmokingPeopleTests/Pods-NoSmokingPeopleTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		CB9B887E202C5C02009964C4 /* Frameworks */ = {
+		CB13425F1F1FB94200E1A1AA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF7AF7EFF34043A48831B769 /* Pods_NoSmokingPeople.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB1342731F1FB94200E1A1AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69C6D2186800E5FF943B8079 /* Pods_NoSmokingPeopleTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB13427E1F1FB94200E1A1AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6FB94E46425653530A76D51C /* Pods_NoSmokingPeopleUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		CB9B8878202C5C02009964C4 = {
+		85D83EA2B0AFB6402B470E29 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				CB9B8883202C5C02009964C4 /* NoSmokingPeople */,
-				CB9B8882202C5C02009964C4 /* Products */,
+				DBE0DCF30E971760D2213CA9 /* Pods_NoSmokingPeople.framework */,
+				0BF05978FEE486AE46807E4D /* Pods_NoSmokingPeopleTests.framework */,
+				36DAFCB9135E18B1CA787977 /* Pods_NoSmokingPeopleUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8A6CF367214614491A8085E0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3E6EB1C4D60919F083230CF9 /* Pods-NoSmokingPeople.debug.xcconfig */,
+				DB7E69E3B6CAE6B47632859D /* Pods-NoSmokingPeople.release.xcconfig */,
+				DCBCC07EEBA8168863AFD9EF /* Pods-NoSmokingPeopleTests.debug.xcconfig */,
+				FBBFB43B8FCF7E7409C6B954 /* Pods-NoSmokingPeopleTests.release.xcconfig */,
+				6CF9E13E5BEEBD34AC9EFBBD /* Pods-NoSmokingPeopleUITests.debug.xcconfig */,
+				5706C0B42631E4EDB0ACC877 /* Pods-NoSmokingPeopleUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CB1342591F1FB94200E1A1AA = {
+			isa = PBXGroup;
+			children = (
+				CB1342641F1FB94200E1A1AA /* NoSmokingPeople */,
+				CB1342791F1FB94200E1A1AA /* NoSmokingPeopleTests */,
+				CB1342841F1FB94200E1A1AA /* NoSmokingPeopleUITests */,
+				CB1342631F1FB94200E1A1AA /* Products */,
+				8A6CF367214614491A8085E0 /* Pods */,
+				85D83EA2B0AFB6402B470E29 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		CB9B8882202C5C02009964C4 /* Products */ = {
+		CB1342631F1FB94200E1A1AA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CB9B8881202C5C02009964C4 /* NoSmokingPeople.app */,
+				CB1342621F1FB94200E1A1AA /* NoSmokingPeople.app */,
+				CB1342761F1FB94200E1A1AA /* NoSmokingPeopleTests.xctest */,
+				CB1342811F1FB94200E1A1AA /* NoSmokingPeopleUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		CB9B8883202C5C02009964C4 /* NoSmokingPeople */ = {
+		CB1342641F1FB94200E1A1AA /* NoSmokingPeople */ = {
 			isa = PBXGroup;
 			children = (
-				CB9B8884202C5C02009964C4 /* AppDelegate.swift */,
-				CB9B8886202C5C02009964C4 /* ViewController.swift */,
-				CB9B8888202C5C02009964C4 /* Main.storyboard */,
-				CB9B888B202C5C02009964C4 /* Assets.xcassets */,
-				CB9B888D202C5C02009964C4 /* LaunchScreen.storyboard */,
-				CB9B8890202C5C02009964C4 /* Info.plist */,
+				CBDEA7EC1F39A97900D8F38F /* font */,
+				CB1342651F1FB94200E1A1AA /* AppDelegate.swift */,
+				CB194E941F21D77300D80114 /* LoginViewController.swift */,
+				CB1342671F1FB94200E1A1AA /* SmokingCheckViewController.swift */,
+				CBA152FF202C0A8C000990EF /* MyCustomTextField.swift */,
+				CB194E921F2074CA00D80114 /* WrittenOathViewController.swift */,
+				CBDEA7EA1F39A47700D8F38F /* Extension.swift */,
+				CBDEA7ED1F39A98800D8F38F /* Manual */,
+				CB64FBB01F3AB62300530E16 /* Tab_bar */,
+				CB2C2D451F57EF5A006965F0 /* drawer */,
+				CB13426C1F1FB94200E1A1AA /* Assets.xcassets */,
+				CBDEA7EE1F39A9EE00D8F38F /* storyboard */,
+				CB1342711F1FB94200E1A1AA /* Info.plist */,
 			);
 			path = NoSmokingPeople;
+			sourceTree = "<group>";
+		};
+		CB1342791F1FB94200E1A1AA /* NoSmokingPeopleTests */ = {
+			isa = PBXGroup;
+			children = (
+				CB13427A1F1FB94200E1A1AA /* NoSmokingPeopleTests.swift */,
+				CB13427C1F1FB94200E1A1AA /* Info.plist */,
+			);
+			path = NoSmokingPeopleTests;
+			sourceTree = "<group>";
+		};
+		CB1342841F1FB94200E1A1AA /* NoSmokingPeopleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CB1342851F1FB94200E1A1AA /* NoSmokingPeopleUITests.swift */,
+				CB1342871F1FB94200E1A1AA /* Info.plist */,
+			);
+			path = NoSmokingPeopleUITests;
+			sourceTree = "<group>";
+		};
+		CB2C2D451F57EF5A006965F0 /* drawer */ = {
+			isa = PBXGroup;
+			children = (
+				CB4A72242023E94F0052BFDA /* Setting */,
+				CB4A722B2023F11E0052BFDA /* drawerViewController.swift */,
+			);
+			name = drawer;
+			sourceTree = "<group>";
+		};
+		CB4A72212023E8CA0052BFDA /* HomeView */ = {
+			isa = PBXGroup;
+			children = (
+				CBF826C81F31D182002D4C09 /* HomeViewController.swift */,
+				CBCA956F1F572A6F00673630 /* HomeCollectionViewCell.swift */,
+			);
+			path = HomeView;
+			sourceTree = "<group>";
+		};
+		CB4A72222023E9030052BFDA /* HealthView */ = {
+			isa = PBXGroup;
+			children = (
+				CB64FBAA1F3AB2A100530E16 /* HealthViewController.swift */,
+				CB2C2D431F57EA9D006965F0 /* HealthHeaderCollectionViewCell.swift */,
+				CBCA95731F57440600673630 /* HealthCollectionViewCell.swift */,
+			);
+			name = HealthView;
+			sourceTree = "<group>";
+		};
+		CB4A72232023E92E0052BFDA /* TipView */ = {
+			isa = PBXGroup;
+			children = (
+				CB64FBAE1F3AB2BC00530E16 /* TipViewController.swift */,
+				CBCA95711F5738D200673630 /* TipCollectionViewCell.swift */,
+			);
+			name = TipView;
+			sourceTree = "<group>";
+		};
+		CB4A72242023E94F0052BFDA /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				CB2C2D481F57EFDC006965F0 /* SettingViewController.swift */,
+				CB2C2D4A1F57F002006965F0 /* SettingTableViewCell.swift */,
+				CB2C2D4B1F57F002006965F0 /* SettingTableViewCell.xib */,
+				CB2C2D4E1F57F01B006965F0 /* SettingHeaderTableViewCell.swift */,
+				CB2C2D4F1F57F01B006965F0 /* SettingHeaderTableViewCell.xib */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		CB64FBB01F3AB62300530E16 /* Tab_bar */ = {
+			isa = PBXGroup;
+			children = (
+				CB4A72212023E8CA0052BFDA /* HomeView */,
+				CB4A72222023E9030052BFDA /* HealthView */,
+				CB64FBAC1F3AB2AE00530E16 /* DiaryViewController.swift */,
+				CB4A72232023E92E0052BFDA /* TipView */,
+			);
+			name = Tab_bar;
+			sourceTree = "<group>";
+		};
+		CBDEA7EC1F39A97900D8F38F /* font */ = {
+			isa = PBXGroup;
+			children = (
+				CBDFF9001F2C7AA6005AE38E /* KoPub Dotum_Pro Light.otf */,
+				CBDFF8F91F2C6D81005AE38E /* KoPub Dotum_Pro Medium.otf */,
+				CBDFF8F81F2C6D81005AE38E /* KoPub Dotum_Pro Bold.otf */,
+				CB9079F41F2C69D1000BF2A6 /* BMHANNA_11yrs_otf.otf */,
+			);
+			name = font;
+			sourceTree = "<group>";
+		};
+		CBDEA7ED1F39A98800D8F38F /* Manual */ = {
+			isa = PBXGroup;
+			children = (
+				830B363B1F39818F0045AC90 /* RootPageViewController.swift */,
+				CB0940E01F3456970078BAA6 /* Manual1_ViewController.swift */,
+				CB0940E21F3456DF0078BAA6 /* Manual2_ViewController.swift */,
+				CB0940E31F3456DF0078BAA6 /* Manual3_ViewController.swift */,
+				CB0940E41F3456DF0078BAA6 /* Manual4_ViewController.swift */,
+			);
+			name = Manual;
+			sourceTree = "<group>";
+		};
+		CBDEA7EE1F39A9EE00D8F38F /* storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				CB13426E1F1FB94200E1A1AA /* LaunchScreen.storyboard */,
+				CB1342691F1FB94200E1A1AA /* Main.storyboard */,
+			);
+			name = storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		CB9B8880202C5C02009964C4 /* NoSmokingPeople */ = {
+		CB1342611F1FB94200E1A1AA /* NoSmokingPeople */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CB9B8893202C5C02009964C4 /* Build configuration list for PBXNativeTarget "NoSmokingPeople" */;
+			buildConfigurationList = CB13428A1F1FB94200E1A1AA /* Build configuration list for PBXNativeTarget "NoSmokingPeople" */;
 			buildPhases = (
-				CB9B887D202C5C02009964C4 /* Sources */,
-				CB9B887E202C5C02009964C4 /* Frameworks */,
-				CB9B887F202C5C02009964C4 /* Resources */,
+				ECEC6FA9DF8D16E1A1686E54 /* [CP] Check Pods Manifest.lock */,
+				CB13425E1F1FB94200E1A1AA /* Sources */,
+				CB13425F1F1FB94200E1A1AA /* Frameworks */,
+				CB1342601F1FB94200E1A1AA /* Resources */,
+				840C2DE5DB5D944E6956D3EB /* [CP] Embed Pods Frameworks */,
+				4B249D90388BD13D643F50E8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -81,81 +346,364 @@
 			);
 			name = NoSmokingPeople;
 			productName = NoSmokingPeople;
-			productReference = CB9B8881202C5C02009964C4 /* NoSmokingPeople.app */;
+			productReference = CB1342621F1FB94200E1A1AA /* NoSmokingPeople.app */;
 			productType = "com.apple.product-type.application";
+		};
+		CB1342751F1FB94200E1A1AA /* NoSmokingPeopleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB13428D1F1FB94200E1A1AA /* Build configuration list for PBXNativeTarget "NoSmokingPeopleTests" */;
+			buildPhases = (
+				9D87B82852BF96827E31DCEE /* [CP] Check Pods Manifest.lock */,
+				CB1342721F1FB94200E1A1AA /* Sources */,
+				CB1342731F1FB94200E1A1AA /* Frameworks */,
+				CB1342741F1FB94200E1A1AA /* Resources */,
+				C72ECBBA664DFB0F66151006 /* [CP] Embed Pods Frameworks */,
+				F6D548DF975EBC85BABC1B43 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CB1342781F1FB94200E1A1AA /* PBXTargetDependency */,
+			);
+			name = NoSmokingPeopleTests;
+			productName = NoSmokingPeopleTests;
+			productReference = CB1342761F1FB94200E1A1AA /* NoSmokingPeopleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CB1342801F1FB94200E1A1AA /* NoSmokingPeopleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB1342901F1FB94200E1A1AA /* Build configuration list for PBXNativeTarget "NoSmokingPeopleUITests" */;
+			buildPhases = (
+				13E68CBCF77E19170476C943 /* [CP] Check Pods Manifest.lock */,
+				CB13427D1F1FB94200E1A1AA /* Sources */,
+				CB13427E1F1FB94200E1A1AA /* Frameworks */,
+				CB13427F1F1FB94200E1A1AA /* Resources */,
+				6739911930D11D3309C04608 /* [CP] Embed Pods Frameworks */,
+				77C5CA1BC4C514F2FC1E1684 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CB1342831F1FB94200E1A1AA /* PBXTargetDependency */,
+			);
+			name = NoSmokingPeopleUITests;
+			productName = NoSmokingPeopleUITests;
+			productReference = CB1342811F1FB94200E1A1AA /* NoSmokingPeopleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		CB9B8879202C5C02009964C4 /* Project object */ = {
+		CB13425A1F1FB94200E1A1AA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "김재희";
 				TargetAttributes = {
-					CB9B8880202C5C02009964C4 = {
-						CreatedOnToolsVersion = 9.2;
+					CB1342611F1FB94200E1A1AA = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 2F465AG84W;
 						ProvisioningStyle = Automatic;
+					};
+					CB1342751F1FB94200E1A1AA = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = CB1342611F1FB94200E1A1AA;
+					};
+					CB1342801F1FB94200E1A1AA = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = CB1342611F1FB94200E1A1AA;
 					};
 				};
 			};
-			buildConfigurationList = CB9B887C202C5C02009964C4 /* Build configuration list for PBXProject "NoSmokingPeople" */;
-			compatibilityVersion = "Xcode 8.0";
-			developmentRegion = en;
+			buildConfigurationList = CB13425D1F1FB94200E1A1AA /* Build configuration list for PBXProject "NoSmokingPeople" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = CB9B8878202C5C02009964C4;
-			productRefGroup = CB9B8882202C5C02009964C4 /* Products */;
+			mainGroup = CB1342591F1FB94200E1A1AA;
+			productRefGroup = CB1342631F1FB94200E1A1AA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CB9B8880202C5C02009964C4 /* NoSmokingPeople */,
+				CB1342611F1FB94200E1A1AA /* NoSmokingPeople */,
+				CB1342751F1FB94200E1A1AA /* NoSmokingPeopleTests */,
+				CB1342801F1FB94200E1A1AA /* NoSmokingPeopleUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		CB9B887F202C5C02009964C4 /* Resources */ = {
+		CB1342601F1FB94200E1A1AA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB9B888F202C5C02009964C4 /* LaunchScreen.storyboard in Resources */,
-				CB9B888C202C5C02009964C4 /* Assets.xcassets in Resources */,
-				CB9B888A202C5C02009964C4 /* Main.storyboard in Resources */,
+				CB9079F51F2C69D1000BF2A6 /* BMHANNA_11yrs_otf.otf in Resources */,
+				CB1342701F1FB94200E1A1AA /* LaunchScreen.storyboard in Resources */,
+				CB2C2D4D1F57F002006965F0 /* SettingTableViewCell.xib in Resources */,
+				CBDFF9011F2C7AA6005AE38E /* KoPub Dotum_Pro Light.otf in Resources */,
+				CBDFF8FD1F2C6D81005AE38E /* KoPub Dotum_Pro Medium.otf in Resources */,
+				CB13426D1F1FB94200E1A1AA /* Assets.xcassets in Resources */,
+				CB13426B1F1FB94200E1A1AA /* Main.storyboard in Resources */,
+				CBDFF8FA1F2C6D81005AE38E /* KoPub Dotum_Pro Bold.otf in Resources */,
+				CB2C2D511F57F01B006965F0 /* SettingHeaderTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB1342741F1FB94200E1A1AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBDFF8FB1F2C6D81005AE38E /* KoPub Dotum_Pro Bold.otf in Resources */,
+				CB9079F61F2C69D1000BF2A6 /* BMHANNA_11yrs_otf.otf in Resources */,
+				CBDFF9021F2C7AA6005AE38E /* KoPub Dotum_Pro Light.otf in Resources */,
+				CBDFF8FE1F2C6D81005AE38E /* KoPub Dotum_Pro Medium.otf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB13427F1F1FB94200E1A1AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBDFF8FC1F2C6D81005AE38E /* KoPub Dotum_Pro Bold.otf in Resources */,
+				CB9079F71F2C69D1000BF2A6 /* BMHANNA_11yrs_otf.otf in Resources */,
+				CBDFF9031F2C7AA6005AE38E /* KoPub Dotum_Pro Light.otf in Resources */,
+				CBDFF8FF1F2C6D81005AE38E /* KoPub Dotum_Pro Medium.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		13E68CBCF77E19170476C943 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NoSmokingPeopleUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4B249D90388BD13D643F50E8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NoSmokingPeople/Pods-NoSmokingPeople-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6739911930D11D3309C04608 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NoSmokingPeopleUITests/Pods-NoSmokingPeopleUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		77C5CA1BC4C514F2FC1E1684 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NoSmokingPeopleUITests/Pods-NoSmokingPeopleUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		840C2DE5DB5D944E6956D3EB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-NoSmokingPeople/Pods-NoSmokingPeople-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/KYDrawerController/KYDrawerController.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KYDrawerController.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NoSmokingPeople/Pods-NoSmokingPeople-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9D87B82852BF96827E31DCEE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NoSmokingPeopleTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C72ECBBA664DFB0F66151006 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NoSmokingPeopleTests/Pods-NoSmokingPeopleTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ECEC6FA9DF8D16E1A1686E54 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NoSmokingPeople-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F6D548DF975EBC85BABC1B43 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NoSmokingPeopleTests/Pods-NoSmokingPeopleTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		CB9B887D202C5C02009964C4 /* Sources */ = {
+		CB13425E1F1FB94200E1A1AA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB9B8887202C5C02009964C4 /* ViewController.swift in Sources */,
-				CB9B8885202C5C02009964C4 /* AppDelegate.swift in Sources */,
+				830B363C1F39818F0045AC90 /* RootPageViewController.swift in Sources */,
+				CB194E951F21D77300D80114 /* LoginViewController.swift in Sources */,
+				CB1342681F1FB94200E1A1AA /* SmokingCheckViewController.swift in Sources */,
+				CB4A722C2023F11E0052BFDA /* drawerViewController.swift in Sources */,
+				CB2C2D501F57F01B006965F0 /* SettingHeaderTableViewCell.swift in Sources */,
+				CB2C2D441F57EA9D006965F0 /* HealthHeaderCollectionViewCell.swift in Sources */,
+				CBDEA7EB1F39A47700D8F38F /* Extension.swift in Sources */,
+				CB0940E11F3456970078BAA6 /* Manual1_ViewController.swift in Sources */,
+				CBCA95701F572A6F00673630 /* HomeCollectionViewCell.swift in Sources */,
+				CB194E931F2074CA00D80114 /* WrittenOathViewController.swift in Sources */,
+				CB2C2D4C1F57F002006965F0 /* SettingTableViewCell.swift in Sources */,
+				CB0940E81F3456DF0078BAA6 /* Manual4_ViewController.swift in Sources */,
+				CB0940E61F3456DF0078BAA6 /* Manual2_ViewController.swift in Sources */,
+				CB1342661F1FB94200E1A1AA /* AppDelegate.swift in Sources */,
+				CBCA95721F5738D200673630 /* TipCollectionViewCell.swift in Sources */,
+				CBA15300202C0A8C000990EF /* MyCustomTextField.swift in Sources */,
+				CBCA95741F57440600673630 /* HealthCollectionViewCell.swift in Sources */,
+				CB64FBAD1F3AB2AE00530E16 /* DiaryViewController.swift in Sources */,
+				CB2C2D491F57EFDC006965F0 /* SettingViewController.swift in Sources */,
+				CB64FBAF1F3AB2BC00530E16 /* TipViewController.swift in Sources */,
+				CBF826C91F31D182002D4C09 /* HomeViewController.swift in Sources */,
+				CB64FBAB1F3AB2A100530E16 /* HealthViewController.swift in Sources */,
+				CB0940E71F3456DF0078BAA6 /* Manual3_ViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB1342721F1FB94200E1A1AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB13427B1F1FB94200E1A1AA /* NoSmokingPeopleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB13427D1F1FB94200E1A1AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB1342861F1FB94200E1A1AA /* NoSmokingPeopleUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		CB1342781F1FB94200E1A1AA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CB1342611F1FB94200E1A1AA /* NoSmokingPeople */;
+			targetProxy = CB1342771F1FB94200E1A1AA /* PBXContainerItemProxy */;
+		};
+		CB1342831F1FB94200E1A1AA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CB1342611F1FB94200E1A1AA /* NoSmokingPeople */;
+			targetProxy = CB1342821F1FB94200E1A1AA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
-		CB9B8888202C5C02009964C4 /* Main.storyboard */ = {
+		CB1342691F1FB94200E1A1AA /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				CB9B8889202C5C02009964C4 /* Base */,
+				CB13426A1F1FB94200E1A1AA /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		CB9B888D202C5C02009964C4 /* LaunchScreen.storyboard */ = {
+		CB13426E1F1FB94200E1A1AA /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				CB9B888E202C5C02009964C4 /* Base */,
+				CB13426F1F1FB94200E1A1AA /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -163,19 +711,17 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		CB9B8891202C5C02009964C4 /* Debug */ = {
+		CB1342881F1FB94200E1A1AA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -183,21 +729,16 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -211,28 +752,27 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		CB9B8892202C5C02009964C4 /* Release */ = {
+		CB1342891F1FB94200E1A1AA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -240,21 +780,16 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
@@ -262,64 +797,143 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		CB9B8894202C5C02009964C4 /* Debug */ = {
+		CB13428B1F1FB94200E1A1AA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E6EB1C4D60919F083230CF9 /* Pods-NoSmokingPeople.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2F465AG84W;
 				INFOPLIST_FILE = NoSmokingPeople/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "github.com-jaehui327.NoSmokingPeople";
+				PRODUCT_BUNDLE_IDENTIFIER = "jaehui-INU-Appcenter.NoSmokingPeople";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		CB9B8895202C5C02009964C4 /* Release */ = {
+		CB13428C1F1FB94200E1A1AA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB7E69E3B6CAE6B47632859D /* Pods-NoSmokingPeople.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2F465AG84W;
 				INFOPLIST_FILE = NoSmokingPeople/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "github.com-jaehui327.NoSmokingPeople";
+				PRODUCT_BUNDLE_IDENTIFIER = "jaehui-INU-Appcenter.NoSmokingPeople";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CB13428E1F1FB94200E1A1AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DCBCC07EEBA8168863AFD9EF /* Pods-NoSmokingPeopleTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = NoSmokingPeopleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "jaehui-INU-Appcenter.NoSmokingPeopleTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NoSmokingPeople.app/NoSmokingPeople";
+			};
+			name = Debug;
+		};
+		CB13428F1F1FB94200E1A1AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FBBFB43B8FCF7E7409C6B954 /* Pods-NoSmokingPeopleTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = NoSmokingPeopleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "jaehui-INU-Appcenter.NoSmokingPeopleTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NoSmokingPeople.app/NoSmokingPeople";
+			};
+			name = Release;
+		};
+		CB1342911F1FB94200E1A1AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6CF9E13E5BEEBD34AC9EFBBD /* Pods-NoSmokingPeopleUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = NoSmokingPeopleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "jaehui-INU-Appcenter.NoSmokingPeopleUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = NoSmokingPeople;
+			};
+			name = Debug;
+		};
+		CB1342921F1FB94200E1A1AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5706C0B42631E4EDB0ACC877 /* Pods-NoSmokingPeopleUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = NoSmokingPeopleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "jaehui-INU-Appcenter.NoSmokingPeopleUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = NoSmokingPeople;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		CB9B887C202C5C02009964C4 /* Build configuration list for PBXProject "NoSmokingPeople" */ = {
+		CB13425D1F1FB94200E1A1AA /* Build configuration list for PBXProject "NoSmokingPeople" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CB9B8891202C5C02009964C4 /* Debug */,
-				CB9B8892202C5C02009964C4 /* Release */,
+				CB1342881F1FB94200E1A1AA /* Debug */,
+				CB1342891F1FB94200E1A1AA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CB9B8893202C5C02009964C4 /* Build configuration list for PBXNativeTarget "NoSmokingPeople" */ = {
+		CB13428A1F1FB94200E1A1AA /* Build configuration list for PBXNativeTarget "NoSmokingPeople" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CB9B8894202C5C02009964C4 /* Debug */,
-				CB9B8895202C5C02009964C4 /* Release */,
+				CB13428B1F1FB94200E1A1AA /* Debug */,
+				CB13428C1F1FB94200E1A1AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB13428D1F1FB94200E1A1AA /* Build configuration list for PBXNativeTarget "NoSmokingPeopleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB13428E1F1FB94200E1A1AA /* Debug */,
+				CB13428F1F1FB94200E1A1AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB1342901F1FB94200E1A1AA /* Build configuration list for PBXNativeTarget "NoSmokingPeopleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB1342911F1FB94200E1A1AA /* Debug */,
+				CB1342921F1FB94200E1A1AA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = CB9B8879202C5C02009964C4 /* Project object */;
+	rootObject = CB13425A1F1FB94200E1A1AA /* Project object */;
 }
