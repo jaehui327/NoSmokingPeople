@@ -28,8 +28,6 @@ class TipViewController: UIViewController {
             drawer.setDrawerState(.opened, animated: true)
         }
     }
-    
-
 }
 
 extension TipViewController : UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
@@ -39,7 +37,7 @@ extension TipViewController : UICollectionViewDataSource, UICollectionViewDelega
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 4
+        return 1
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -47,13 +45,20 @@ extension TipViewController : UICollectionViewDataSource, UICollectionViewDelega
         
         switch indexPath.row {
         case 0:
-            cell.titleimage.image = UIImage(named : "appcenter")
-            cell.titlelabel.text = "앱센터 짱짱맨"
+            cell.titleimage.image = UIImage(named : "imgTipTitle1")
+            cell.titlelabel.text = "담배의 역사"
+            
             break
+//        default:
+//            cell.titleimage.image = UIImage(named : "appcenter")
+//            cell.titlelabel.text = "앱센터 짱짱맨"
+//            break
         default:
-            cell.titleimage.image = UIImage(named : "appcenter")
-            cell.titlelabel.text = "앱센터 짱짱맨"
             break
+        }
+        
+        func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+            self.performSegue(withIdentifier: "tipDetail", sender: self)
         }
         
         cell.layer.cornerRadius = 4
@@ -66,12 +71,28 @@ extension TipViewController : UICollectionViewDataSource, UICollectionViewDelega
         
         return cell
     }
+//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+//        let width = UIScreen.main.bounds.width - 55
+//        let height = width / 320 * 208
+//        return CGSize(width: width, height: height)
+//
+//        //320 208
+//    }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let width = UIScreen.main.bounds.width - 55
-        let height = width / 320 * 208
-        return CGSize(width: width, height: height)
-        
-        //320 208
+        //Get frame width
+        let width = self.view.frame.width
+        //I want a width of 418 and height of 274 (Aspect ratio 209:137) with a margin of 24 on each side of the cell (See insetForSectionAt 24 + 24 = 48). So, check if a have that much screen real estate.
+        if width > (320 + 32) {
+            //If I do return the size I want
+            return CGSize(width: 320, height: 208)
+        }else{
+            //Get new width. Frame width minus the margins I want to maintain
+            let newWidth = (width - 32)
+            //If not calculate the new height that maintains the aspect ratio I want. NewHeight = (originalHeight / originalWidth) * newWidth
+                        let height = (208 / 343) * newWidth
+            //Return the new size that is Aspect ratio 209:137
+            return CGSize(width: newWidth, height: height)
+        }
     }
     
 //    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {

@@ -33,8 +33,6 @@ class RootPageViewController : UIPageViewController,UIPageViewControllerDataSour
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
        
-        let backButton = UIBarButtonItem(title: "", style: UIBarButtonItemStyle.plain, target: navigationController, action: nil)
-        navigationItem.leftBarButtonItem = backButton
         
         //금연의 민족 로고 
         let logo = UIImage(named: "invalidName")
@@ -45,6 +43,17 @@ class RootPageViewController : UIPageViewController,UIPageViewControllerDataSour
         self.navigationController?.navigationBar.isHidden = false
 
     }
+    
+    func hideBackButton(){
+        let backButton = UIBarButtonItem(title: "", style: UIBarButtonItemStyle.plain, target: navigationController, action: nil)
+        navigationItem.leftBarButtonItem = backButton
+    }
+    
+    func hideStartButton(){
+        guard let vc = self.viewControllerList[3] as? Manual4_ViewController else { return }
+        vc.startButtonHidden = true
+    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -92,8 +101,8 @@ class RootPageViewController : UIPageViewController,UIPageViewControllerDataSour
         guard let vcIndex = viewControllerList.index(of: viewController) else {
             return nil
         }
-        print("vcIndex")
-        print(vcIndex)
+//        print("vcIndex")
+//        print(vcIndex)
         
         //현재 인덱스값 - 1 = 이전 인덱스값
         let previousIndex = vcIndex - 1
@@ -129,8 +138,8 @@ class RootPageViewController : UIPageViewController,UIPageViewControllerDataSour
         guard let vcIndex = viewControllerList.index(of: viewController) else {
             return nil
         }
-        print("AfterVCIndex")
-        print(vcIndex)
+//        print("AfterVCIndex")
+//        print(vcIndex)
         
         let nextIndex = vcIndex + 1
         

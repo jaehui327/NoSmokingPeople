@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		69C6D2186800E5FF943B8079 /* Pods_NoSmokingPeopleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BF05978FEE486AE46807E4D /* Pods_NoSmokingPeopleTests.framework */; };
-		6FB94E46425653530A76D51C /* Pods_NoSmokingPeopleUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36DAFCB9135E18B1CA787977 /* Pods_NoSmokingPeopleUITests.framework */; };
 		830B363C1F39818F0045AC90 /* RootPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830B363B1F39818F0045AC90 /* RootPageViewController.swift */; };
 		CB0940E11F3456970078BAA6 /* Manual1_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0940E01F3456970078BAA6 /* Manual1_ViewController.swift */; };
 		CB0940E61F3456DF0078BAA6 /* Manual2_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0940E21F3456DF0078BAA6 /* Manual2_ViewController.swift */; };
@@ -23,6 +21,8 @@
 		CB1342861F1FB94200E1A1AA /* NoSmokingPeopleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1342851F1FB94200E1A1AA /* NoSmokingPeopleUITests.swift */; };
 		CB194E931F2074CA00D80114 /* WrittenOathViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB194E921F2074CA00D80114 /* WrittenOathViewController.swift */; };
 		CB194E951F21D77300D80114 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB194E941F21D77300D80114 /* LoginViewController.swift */; };
+		CB27A668203F0FA300BCE57B /* InquiryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB27A667203F0FA300BCE57B /* InquiryViewController.swift */; };
+		CB2AC40D203F9A1B00EDDABA /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2AC40C203F9A1B00EDDABA /* DetailViewController.swift */; };
 		CB2C2D441F57EA9D006965F0 /* HealthHeaderCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2C2D431F57EA9D006965F0 /* HealthHeaderCollectionViewCell.swift */; };
 		CB2C2D491F57EFDC006965F0 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2C2D481F57EFDC006965F0 /* SettingViewController.swift */; };
 		CB2C2D4C1F57F002006965F0 /* SettingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2C2D4A1F57F002006965F0 /* SettingTableViewCell.swift */; };
@@ -30,9 +30,12 @@
 		CB2C2D501F57F01B006965F0 /* SettingHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2C2D4E1F57F01B006965F0 /* SettingHeaderTableViewCell.swift */; };
 		CB2C2D511F57F01B006965F0 /* SettingHeaderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB2C2D4F1F57F01B006965F0 /* SettingHeaderTableViewCell.xib */; };
 		CB4A722C2023F11E0052BFDA /* drawerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4A722B2023F11E0052BFDA /* drawerViewController.swift */; };
+		CB60451E204E6E33005F67ED /* ServerString.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB60451D204E6E33005F67ED /* ServerString.swift */; };
 		CB64FBAB1F3AB2A100530E16 /* HealthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB64FBAA1F3AB2A100530E16 /* HealthViewController.swift */; };
 		CB64FBAD1F3AB2AE00530E16 /* DiaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB64FBAC1F3AB2AE00530E16 /* DiaryViewController.swift */; };
 		CB64FBAF1F3AB2BC00530E16 /* TipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB64FBAE1F3AB2BC00530E16 /* TipViewController.swift */; };
+		CB725E2120343ADC00D74A0C /* UserPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB725E2020343ADC00D74A0C /* UserPreferences.swift */; };
+		CB818C54204674E60099E3ED /* InformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB818C53204674E60099E3ED /* InformationViewController.swift */; };
 		CB9079F51F2C69D1000BF2A6 /* BMHANNA_11yrs_otf.otf in Resources */ = {isa = PBXBuildFile; fileRef = CB9079F41F2C69D1000BF2A6 /* BMHANNA_11yrs_otf.otf */; };
 		CB9079F61F2C69D1000BF2A6 /* BMHANNA_11yrs_otf.otf in Resources */ = {isa = PBXBuildFile; fileRef = CB9079F41F2C69D1000BF2A6 /* BMHANNA_11yrs_otf.otf */; };
 		CB9079F71F2C69D1000BF2A6 /* BMHANNA_11yrs_otf.otf in Resources */ = {isa = PBXBuildFile; fileRef = CB9079F41F2C69D1000BF2A6 /* BMHANNA_11yrs_otf.otf */; };
@@ -50,6 +53,7 @@
 		CBDFF9011F2C7AA6005AE38E /* KoPub Dotum_Pro Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = CBDFF9001F2C7AA6005AE38E /* KoPub Dotum_Pro Light.otf */; };
 		CBDFF9021F2C7AA6005AE38E /* KoPub Dotum_Pro Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = CBDFF9001F2C7AA6005AE38E /* KoPub Dotum_Pro Light.otf */; };
 		CBDFF9031F2C7AA6005AE38E /* KoPub Dotum_Pro Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = CBDFF9001F2C7AA6005AE38E /* KoPub Dotum_Pro Light.otf */; };
+		CBF16086204D1384004F3342 /* ResetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF16085204D1384004F3342 /* ResetViewController.swift */; };
 		CBF826C91F31D182002D4C09 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF826C81F31D182002D4C09 /* HomeViewController.swift */; };
 		EF7AF7EFF34043A48831B769 /* Pods_NoSmokingPeople.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBE0DCF30E971760D2213CA9 /* Pods_NoSmokingPeople.framework */; };
 /* End PBXBuildFile section */
@@ -75,8 +79,6 @@
 		0BF05978FEE486AE46807E4D /* Pods_NoSmokingPeopleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NoSmokingPeopleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		36DAFCB9135E18B1CA787977 /* Pods_NoSmokingPeopleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NoSmokingPeopleUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E6EB1C4D60919F083230CF9 /* Pods-NoSmokingPeople.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoSmokingPeople.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NoSmokingPeople/Pods-NoSmokingPeople.debug.xcconfig"; sourceTree = "<group>"; };
-		5706C0B42631E4EDB0ACC877 /* Pods-NoSmokingPeopleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoSmokingPeopleUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NoSmokingPeopleUITests/Pods-NoSmokingPeopleUITests.release.xcconfig"; sourceTree = "<group>"; };
-		6CF9E13E5BEEBD34AC9EFBBD /* Pods-NoSmokingPeopleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoSmokingPeopleUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NoSmokingPeopleUITests/Pods-NoSmokingPeopleUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		830B363B1F39818F0045AC90 /* RootPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootPageViewController.swift; sourceTree = "<group>"; };
 		CB0940E01F3456970078BAA6 /* Manual1_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Manual1_ViewController.swift; sourceTree = "<group>"; };
 		CB0940E21F3456DF0078BAA6 /* Manual2_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Manual2_ViewController.swift; sourceTree = "<group>"; };
@@ -97,6 +99,8 @@
 		CB1342871F1FB94200E1A1AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB194E921F2074CA00D80114 /* WrittenOathViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WrittenOathViewController.swift; sourceTree = "<group>"; };
 		CB194E941F21D77300D80114 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		CB27A667203F0FA300BCE57B /* InquiryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InquiryViewController.swift; sourceTree = "<group>"; };
+		CB2AC40C203F9A1B00EDDABA /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		CB2C2D431F57EA9D006965F0 /* HealthHeaderCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthHeaderCollectionViewCell.swift; sourceTree = "<group>"; };
 		CB2C2D481F57EFDC006965F0 /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		CB2C2D4A1F57F002006965F0 /* SettingTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingTableViewCell.swift; sourceTree = "<group>"; };
@@ -104,9 +108,12 @@
 		CB2C2D4E1F57F01B006965F0 /* SettingHeaderTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingHeaderTableViewCell.swift; sourceTree = "<group>"; };
 		CB2C2D4F1F57F01B006965F0 /* SettingHeaderTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingHeaderTableViewCell.xib; sourceTree = "<group>"; };
 		CB4A722B2023F11E0052BFDA /* drawerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = drawerViewController.swift; sourceTree = "<group>"; };
+		CB60451D204E6E33005F67ED /* ServerString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerString.swift; sourceTree = "<group>"; };
 		CB64FBAA1F3AB2A100530E16 /* HealthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthViewController.swift; sourceTree = "<group>"; };
 		CB64FBAC1F3AB2AE00530E16 /* DiaryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiaryViewController.swift; sourceTree = "<group>"; };
 		CB64FBAE1F3AB2BC00530E16 /* TipViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TipViewController.swift; sourceTree = "<group>"; };
+		CB725E2020343ADC00D74A0C /* UserPreferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPreferences.swift; sourceTree = "<group>"; };
+		CB818C53204674E60099E3ED /* InformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationViewController.swift; sourceTree = "<group>"; };
 		CB9079F41F2C69D1000BF2A6 /* BMHANNA_11yrs_otf.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = BMHANNA_11yrs_otf.otf; sourceTree = "<group>"; };
 		CBA152FF202C0A8C000990EF /* MyCustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCustomTextField.swift; sourceTree = "<group>"; };
 		CBCA956F1F572A6F00673630 /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -116,11 +123,10 @@
 		CBDFF8F81F2C6D81005AE38E /* KoPub Dotum_Pro Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "KoPub Dotum_Pro Bold.otf"; sourceTree = "<group>"; };
 		CBDFF8F91F2C6D81005AE38E /* KoPub Dotum_Pro Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "KoPub Dotum_Pro Medium.otf"; sourceTree = "<group>"; };
 		CBDFF9001F2C7AA6005AE38E /* KoPub Dotum_Pro Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "KoPub Dotum_Pro Light.otf"; sourceTree = "<group>"; };
+		CBF16085204D1384004F3342 /* ResetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetViewController.swift; sourceTree = "<group>"; };
 		CBF826C81F31D182002D4C09 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		DB7E69E3B6CAE6B47632859D /* Pods-NoSmokingPeople.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoSmokingPeople.release.xcconfig"; path = "Pods/Target Support Files/Pods-NoSmokingPeople/Pods-NoSmokingPeople.release.xcconfig"; sourceTree = "<group>"; };
 		DBE0DCF30E971760D2213CA9 /* Pods_NoSmokingPeople.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NoSmokingPeople.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DCBCC07EEBA8168863AFD9EF /* Pods-NoSmokingPeopleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoSmokingPeopleTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NoSmokingPeopleTests/Pods-NoSmokingPeopleTests.debug.xcconfig"; sourceTree = "<group>"; };
-		FBBFB43B8FCF7E7409C6B954 /* Pods-NoSmokingPeopleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoSmokingPeopleTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NoSmokingPeopleTests/Pods-NoSmokingPeopleTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,7 +142,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				69C6D2186800E5FF943B8079 /* Pods_NoSmokingPeopleTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,7 +149,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6FB94E46425653530A76D51C /* Pods_NoSmokingPeopleUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,10 +170,6 @@
 			children = (
 				3E6EB1C4D60919F083230CF9 /* Pods-NoSmokingPeople.debug.xcconfig */,
 				DB7E69E3B6CAE6B47632859D /* Pods-NoSmokingPeople.release.xcconfig */,
-				DCBCC07EEBA8168863AFD9EF /* Pods-NoSmokingPeopleTests.debug.xcconfig */,
-				FBBFB43B8FCF7E7409C6B954 /* Pods-NoSmokingPeopleTests.release.xcconfig */,
-				6CF9E13E5BEEBD34AC9EFBBD /* Pods-NoSmokingPeopleUITests.debug.xcconfig */,
-				5706C0B42631E4EDB0ACC877 /* Pods-NoSmokingPeopleUITests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -200,18 +200,20 @@
 			isa = PBXGroup;
 			children = (
 				CBDEA7EC1F39A97900D8F38F /* font */,
-				CB1342651F1FB94200E1A1AA /* AppDelegate.swift */,
 				CB194E941F21D77300D80114 /* LoginViewController.swift */,
 				CB1342671F1FB94200E1A1AA /* SmokingCheckViewController.swift */,
-				CBA152FF202C0A8C000990EF /* MyCustomTextField.swift */,
 				CB194E921F2074CA00D80114 /* WrittenOathViewController.swift */,
-				CBDEA7EA1F39A47700D8F38F /* Extension.swift */,
 				CBDEA7ED1F39A98800D8F38F /* Manual */,
 				CB64FBB01F3AB62300530E16 /* Tab_bar */,
 				CB2C2D451F57EF5A006965F0 /* drawer */,
 				CB13426C1F1FB94200E1A1AA /* Assets.xcassets */,
 				CBDEA7EE1F39A9EE00D8F38F /* storyboard */,
 				CB1342711F1FB94200E1A1AA /* Info.plist */,
+				CB1342651F1FB94200E1A1AA /* AppDelegate.swift */,
+				CB725E2020343ADC00D74A0C /* UserPreferences.swift */,
+				CBA152FF202C0A8C000990EF /* MyCustomTextField.swift */,
+				CBDEA7EA1F39A47700D8F38F /* Extension.swift */,
+				CB60451D204E6E33005F67ED /* ServerString.swift */,
 			);
 			path = NoSmokingPeople;
 			sourceTree = "<group>";
@@ -237,8 +239,10 @@
 		CB2C2D451F57EF5A006965F0 /* drawer */ = {
 			isa = PBXGroup;
 			children = (
-				CB4A72242023E94F0052BFDA /* Setting */,
 				CB4A722B2023F11E0052BFDA /* drawerViewController.swift */,
+				CB4A72242023E94F0052BFDA /* Setting */,
+				CB27A667203F0FA300BCE57B /* InquiryViewController.swift */,
+				CB818C53204674E60099E3ED /* InformationViewController.swift */,
 			);
 			name = drawer;
 			sourceTree = "<group>";
@@ -267,6 +271,7 @@
 			children = (
 				CB64FBAE1F3AB2BC00530E16 /* TipViewController.swift */,
 				CBCA95711F5738D200673630 /* TipCollectionViewCell.swift */,
+				CB2AC40C203F9A1B00EDDABA /* DetailViewController.swift */,
 			);
 			name = TipView;
 			sourceTree = "<group>";
@@ -274,11 +279,8 @@
 		CB4A72242023E94F0052BFDA /* Setting */ = {
 			isa = PBXGroup;
 			children = (
-				CB2C2D481F57EFDC006965F0 /* SettingViewController.swift */,
-				CB2C2D4A1F57F002006965F0 /* SettingTableViewCell.swift */,
-				CB2C2D4B1F57F002006965F0 /* SettingTableViewCell.xib */,
-				CB2C2D4E1F57F01B006965F0 /* SettingHeaderTableViewCell.swift */,
-				CB2C2D4F1F57F01B006965F0 /* SettingHeaderTableViewCell.xib */,
+				CBF16087204D185C004F3342 /* settingView */,
+				CBF16085204D1384004F3342 /* ResetViewController.swift */,
 			);
 			path = Setting;
 			sourceTree = "<group>";
@@ -326,6 +328,18 @@
 			name = storyboard;
 			sourceTree = "<group>";
 		};
+		CBF16087204D185C004F3342 /* settingView */ = {
+			isa = PBXGroup;
+			children = (
+				CB2C2D481F57EFDC006965F0 /* SettingViewController.swift */,
+				CB2C2D4A1F57F002006965F0 /* SettingTableViewCell.swift */,
+				CB2C2D4B1F57F002006965F0 /* SettingTableViewCell.xib */,
+				CB2C2D4E1F57F01B006965F0 /* SettingHeaderTableViewCell.swift */,
+				CB2C2D4F1F57F01B006965F0 /* SettingHeaderTableViewCell.xib */,
+			);
+			path = settingView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -353,12 +367,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CB13428D1F1FB94200E1A1AA /* Build configuration list for PBXNativeTarget "NoSmokingPeopleTests" */;
 			buildPhases = (
-				9D87B82852BF96827E31DCEE /* [CP] Check Pods Manifest.lock */,
 				CB1342721F1FB94200E1A1AA /* Sources */,
 				CB1342731F1FB94200E1A1AA /* Frameworks */,
 				CB1342741F1FB94200E1A1AA /* Resources */,
-				C72ECBBA664DFB0F66151006 /* [CP] Embed Pods Frameworks */,
-				F6D548DF975EBC85BABC1B43 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -374,12 +385,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CB1342901F1FB94200E1A1AA /* Build configuration list for PBXNativeTarget "NoSmokingPeopleUITests" */;
 			buildPhases = (
-				13E68CBCF77E19170476C943 /* [CP] Check Pods Manifest.lock */,
 				CB13427D1F1FB94200E1A1AA /* Sources */,
 				CB13427E1F1FB94200E1A1AA /* Frameworks */,
 				CB13427F1F1FB94200E1A1AA /* Resources */,
-				6739911930D11D3309C04608 /* [CP] Embed Pods Frameworks */,
-				77C5CA1BC4C514F2FC1E1684 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -480,24 +488,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		13E68CBCF77E19170476C943 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-NoSmokingPeopleUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 		4B249D90388BD13D643F50E8 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -513,36 +503,6 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NoSmokingPeople/Pods-NoSmokingPeople-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		6739911930D11D3309C04608 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NoSmokingPeopleUITests/Pods-NoSmokingPeopleUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		77C5CA1BC4C514F2FC1E1684 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NoSmokingPeopleUITests/Pods-NoSmokingPeopleUITests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		840C2DE5DB5D944E6956D3EB /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -550,48 +510,19 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-NoSmokingPeople/Pods-NoSmokingPeople-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/KYDrawerController/KYDrawerController.framework",
+				"${BUILT_PRODUCTS_DIR}/Toaster/Toaster.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KYDrawerController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Toaster.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NoSmokingPeople/Pods-NoSmokingPeople-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		9D87B82852BF96827E31DCEE /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-NoSmokingPeopleTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C72ECBBA664DFB0F66151006 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NoSmokingPeopleTests/Pods-NoSmokingPeopleTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		ECEC6FA9DF8D16E1A1686E54 /* [CP] Check Pods Manifest.lock */ = {
@@ -612,21 +543,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		F6D548DF975EBC85BABC1B43 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NoSmokingPeopleTests/Pods-NoSmokingPeopleTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -635,6 +551,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				830B363C1F39818F0045AC90 /* RootPageViewController.swift in Sources */,
+				CB725E2120343ADC00D74A0C /* UserPreferences.swift in Sources */,
 				CB194E951F21D77300D80114 /* LoginViewController.swift in Sources */,
 				CB1342681F1FB94200E1A1AA /* SmokingCheckViewController.swift in Sources */,
 				CB4A722C2023F11E0052BFDA /* drawerViewController.swift in Sources */,
@@ -646,16 +563,21 @@
 				CB194E931F2074CA00D80114 /* WrittenOathViewController.swift in Sources */,
 				CB2C2D4C1F57F002006965F0 /* SettingTableViewCell.swift in Sources */,
 				CB0940E81F3456DF0078BAA6 /* Manual4_ViewController.swift in Sources */,
+				CB2AC40D203F9A1B00EDDABA /* DetailViewController.swift in Sources */,
 				CB0940E61F3456DF0078BAA6 /* Manual2_ViewController.swift in Sources */,
+				CB60451E204E6E33005F67ED /* ServerString.swift in Sources */,
 				CB1342661F1FB94200E1A1AA /* AppDelegate.swift in Sources */,
 				CBCA95721F5738D200673630 /* TipCollectionViewCell.swift in Sources */,
+				CB818C54204674E60099E3ED /* InformationViewController.swift in Sources */,
 				CBA15300202C0A8C000990EF /* MyCustomTextField.swift in Sources */,
+				CB27A668203F0FA300BCE57B /* InquiryViewController.swift in Sources */,
 				CBCA95741F57440600673630 /* HealthCollectionViewCell.swift in Sources */,
 				CB64FBAD1F3AB2AE00530E16 /* DiaryViewController.swift in Sources */,
 				CB2C2D491F57EFDC006965F0 /* SettingViewController.swift in Sources */,
 				CB64FBAF1F3AB2BC00530E16 /* TipViewController.swift in Sources */,
 				CBF826C91F31D182002D4C09 /* HomeViewController.swift in Sources */,
 				CB64FBAB1F3AB2A100530E16 /* HealthViewController.swift in Sources */,
+				CBF16086204D1384004F3342 /* ResetViewController.swift in Sources */,
 				CB0940E71F3456DF0078BAA6 /* Manual3_ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -811,11 +733,14 @@
 			baseConfigurationReference = 3E6EB1C4D60919F083230CF9 /* Pods-NoSmokingPeople.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2F465AG84W;
 				INFOPLIST_FILE = NoSmokingPeople/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "jaehui-INU-Appcenter.NoSmokingPeople";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -826,11 +751,14 @@
 			baseConfigurationReference = DB7E69E3B6CAE6B47632859D /* Pods-NoSmokingPeople.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2F465AG84W;
 				INFOPLIST_FILE = NoSmokingPeople/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "jaehui-INU-Appcenter.NoSmokingPeople";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -838,7 +766,6 @@
 		};
 		CB13428E1F1FB94200E1A1AA /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DCBCC07EEBA8168863AFD9EF /* Pods-NoSmokingPeopleTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -853,7 +780,6 @@
 		};
 		CB13428F1F1FB94200E1A1AA /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FBBFB43B8FCF7E7409C6B954 /* Pods-NoSmokingPeopleTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -868,7 +794,6 @@
 		};
 		CB1342911F1FB94200E1A1AA /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6CF9E13E5BEEBD34AC9EFBBD /* Pods-NoSmokingPeopleUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = NoSmokingPeopleUITests/Info.plist;
@@ -882,7 +807,6 @@
 		};
 		CB1342921F1FB94200E1A1AA /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5706C0B42631E4EDB0ACC877 /* Pods-NoSmokingPeopleUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = NoSmokingPeopleUITests/Info.plist;

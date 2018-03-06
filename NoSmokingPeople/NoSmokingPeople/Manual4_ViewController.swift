@@ -11,6 +11,10 @@ import KYDrawerController
 
 class Manual4_ViewController: UIViewController {
 
+    @IBOutlet weak var startButton: UIButton!
+    
+    var startButtonHidden:Bool = false
+    
     let drawerController = KYDrawerController(drawerDirection: .left, drawerWidth: 240)
     
     @IBAction func gotoHomeViewController(_ sender: Any) {
@@ -39,6 +43,15 @@ class Manual4_ViewController: UIViewController {
         navigationItem.leftBarButtonItem = backButton
         // Do any additional setup after loading the view.
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        if startButtonHidden {
+            startButton.isHidden = true
+        }
+    }
 
 
 }
+
+
+

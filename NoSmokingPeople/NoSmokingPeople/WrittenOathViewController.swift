@@ -10,6 +10,9 @@ import UIKit
 
 class WrittenOathViewController: UIViewController, UITextFieldDelegate {
   
+    var filledtextField:Bool = false
+    
+    let app = UserDefaults.standard
 
     @IBOutlet weak var WrittenOathView: UIView!
 
@@ -18,6 +21,8 @@ class WrittenOathViewController: UIViewController, UITextFieldDelegate {
     
     
     @IBOutlet weak var signUpBtn: UIBarButtonItem!
+    
+    var date:Date? // 저장될 날짜
     
     
     @IBAction func textFieldEditingDidChange(sender: UITextField) {
@@ -33,14 +38,40 @@ class WrittenOathViewController: UIViewController, UITextFieldDelegate {
     
     @IBAction func DatetextFieldEditing(_ sender: UITextField) {
         let datePickerView:UIDatePicker = UIDatePicker()
+        let locale = NSLocale(localeIdentifier: "ko_KO")
+        datePickerView.locale = locale as Locale
         datePickerView.datePickerMode = UIDatePickerMode.date
         sender.inputView = datePickerView
-        let today = NSDate()
+        let today = Date()
+        date = today
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy년 MM월 dd일"
         DateTextField.text = dateFormatter.string(from: today as Date)
         datePickerView.addTarget(self, action: #selector(WrittenOathViewController.datePickerValueChanged), for: UIControlEvents.valueChanged)
     }
+    
+    
+    func addToolBar(textField: UITextField){
+        let toolBar = UIToolbar()
+        toolBar.barStyle = UIBarStyle.default
+        toolBar.isTranslucent = true
+        toolBar.tintColor = UIColor(red: 98 / 255, green: 150 / 255, blue: 174 / 255, alpha: 1)
+        let doneButton = UIBarButtonItem(title: "확인", style: .done, target: self, action: #selector(donePressed))
+        doneButton.setTitleTextAttributes([NSForegroundColorAttributeName : UIColor(red: 98 / 255, green: 150 / 255, blue: 174 / 255, alpha: 1)], for: .normal)
+        let spaceBtn = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
+        toolBar.setItems([spaceBtn, doneButton], animated: false)
+        toolBar.isUserInteractionEnabled = true
+        toolBar.sizeToFit()
+        
+        textField.delegate = self
+        textField.inputAccessoryView = toolBar
+    }
+    
+    func donePressed() {
+        //      self.resignFirstResponder()
+        self.view.endEditing(true)
+    }
+    
     
     func datePickerValueChanged(sender:UIDatePicker) {
         let dateFormatter = DateFormatter()
@@ -48,12 +79,12 @@ class WrittenOathViewController: UIViewController, UITextFieldDelegate {
         dateFormatter.timeStyle = DateFormatter.Style.none
         dateFormatter.dateFormat = "yyyy년 MM월 dd일"
         DateTextField.text = dateFormatter.string(from: sender.date)
+        date = sender.date
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        
         
         NotificationCenter.default.addObserver(self, selector:#selector(textChanged(sender:)), name: NSNotification.Name.UITextFieldTextDidChange, object: nil)
         signUpBtn.isEnabled = false
@@ -65,7 +96,33 @@ class WrittenOathViewController: UIViewController, UITextFieldDelegate {
         NameTextField.delegate = self
         DateTextField.delegate = self
         
+        addToolBar(textField: NameTextField)
+        addToolBar(textField: DateTextField)
         }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        if filledtextField{
+            NameTextField.text = UserDefaults.standard.string(forKey: "name")
+//            let userdate = UserDefaults.standard.string(forKey: "date")
+            if let userdate = app.object(forKey: "date") as? Date{
+                date = userdate
+                let dateFormatter = DateFormatter()
+                dateFormatter.dateFormat = "yyyy년 MM월 dd일"
+                DateTextField.text = dateFormatter.string(from: userdate as Date)
+                DateTextField.textColor = UIColor(hex: 0x6296AE, alpha: 1)
+            }
+            let signUp = UIBarButtonItem(title: "", style: UIBarButtonItemStyle.plain, target: navigationController, action: nil)
+            navigationItem.rightBarButtonItem = signUp
+            NameTextField.isUserInteractionEnabled = false
+            DateTextField.isUserInteractionEnabled = false
+//            tabBarController?.tabBar.isHidden = true
+        }
+    }
+    
+    func textFix(){
+        filledtextField = true
+    }
+    
     
     func textChanged(sender:NSNotification){
         if (NameTextField.hasText && DateTextField.hasText){
@@ -86,5 +143,18 @@ class WrittenOathViewController: UIViewController, UITextFieldDelegate {
         view.endEditing(true)
     }
     
-
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        print(segue)
+        if segue.identifier == "manualsegue" {
+            guard let vc = segue.destination as? RootPageViewController else { return }
+            vc.hideBackButton()
+//            userPreferences.setValue(String(DateTextField.text!), forKey: "date")
+            if let date = self.date {
+                userPreferences.set(date, forKey: "date")
+            }
+            userPreferences.setValue(String(NameTextField.text!), forKey: "name")
+        }
+    }
+    
+    
 }

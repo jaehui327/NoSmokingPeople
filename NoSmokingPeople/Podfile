@@ -5,16 +5,8 @@ target 'NoSmokingPeople' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
   pod 'KYDrawerController'
+  pod 'Alamofire', '~> 4.5' 
+  pod 'Toaster'
   # Pods for NoSmokingPeople
-
-  target 'NoSmokingPeopleTests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
-
-  target 'NoSmokingPeopleUITests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
 
 end

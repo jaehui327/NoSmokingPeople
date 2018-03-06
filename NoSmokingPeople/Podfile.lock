@@ -1,12 +1,18 @@
 PODS:
+  - Alamofire (4.5.0)
   - KYDrawerController (2.0.1)
+  - Toaster (2.0.4)
 
 DEPENDENCIES:
+  - Alamofire (~> 4.5)
   - KYDrawerController
+  - Toaster
 
 SPEC CHECKSUMS:
+  Alamofire: f28cdffd29de33a7bfa022cbd63ae95a27fae140
   KYDrawerController: b716cfa5730dc2133a67efcfc28b3b5a2cff6101
+  Toaster: f13031c636ef065281bc11857be9a16c7659e04f
 
-PODFILE CHECKSUM: c3ceb6e3e66c0eaecca6bbea0286aa106f910c7d
+PODFILE CHECKSUM: 8ed0f3af300b2763a920d9575a33c284da1a1619
 
 COCOAPODS: 1.4.0
