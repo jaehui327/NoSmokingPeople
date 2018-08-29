@@ -164,11 +164,14 @@ class HomeViewController: UIViewController {
     }
     func priceFromTimeInterval(interval: TimeInterval) -> String? {
         let ti = Double(interval)
-        if let y = app.object(forKey: "price") as? Double {
-            let price = ti * y / 86400.0
-            //            print(price)
-            //            print(ti)
-            return String(format: "%0.1f원",price)
+        if let y = app.object(forKey: "number") as? Double {
+            let number = ti * y / 86400.0
+            if let z = app.object(forKey: "price") as? Double {
+                let price = number * z / 20
+                //            print(price)
+                //            print(ti)
+                return String(format: "%0.1f원",price)
+            }
         }
         return nil
     }
@@ -219,7 +222,7 @@ extension HomeViewController : UICollectionViewDelegate, UICollectionViewDataSou
             break
         case 1:
             cell.imageSign.image = UIImage(named: "imgSign2")
-            cell.maintitle.text = "수면연장"
+            cell.maintitle.text = "수명연장"
             if let timeString = getLife(){
                 cell.subtitle.text = timeString
             }
@@ -289,8 +292,16 @@ extension UITabBar {
     
     override open func sizeThatFits(_ size: CGSize) -> CGSize {
         super.sizeThatFits(size)
+        guard let window = UIApplication.shared.keyWindow else {
+            return super.sizeThatFits(size)
+        }
         var sizeThatFits = super.sizeThatFits(size)
-        sizeThatFits.height = 56
+        if #available(iOS 11.0, *) {
+            sizeThatFits.height = window.safeAreaInsets.bottom + 56
+        } else {
+            // Fallback on earlier versions
+            sizeThatFits.height = 56
+        }
         return sizeThatFits
     }
 }

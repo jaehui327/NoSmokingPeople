@@ -80,7 +80,28 @@ class HealthViewController: UIViewController {
         }
         return nil
     }
-
+    
+    func getprice() -> Double? {
+        if let date2 = app.object(forKey: "date") as? Date {
+            let interval = -(date2.timeIntervalSinceNow)
+            return priceFromTimeInterval(interval: interval)
+        }
+        return nil
+    }
+    func priceFromTimeInterval(interval: TimeInterval) -> Double? {
+        let ti = Double(interval)
+        if let y = app.object(forKey: "number") as? Double {
+            let number = ti * y / 86400.0
+            if let z = app.object(forKey: "price") as? Double {
+                let price = number * z / 20
+                //            print(price)
+                //            print(ti)
+                return price
+            }
+        }
+        return nil
+    }
+    
     @IBAction func btnMenuPressed(_ sender: Any) {
         if let drawer = tabBarController?.parent as? KYDrawerController {
             drawer.setDrawerState(.opened, animated: true)
@@ -104,19 +125,26 @@ extension HealthViewController : UICollectionViewDelegate, UICollectionViewDataS
     
     
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
-        let cell = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionElementKindSectionHeader, withReuseIdentifier: "HealthHeaderCollectionCell", for: indexPath) as! HealthHeaderCollectionViewCell
-        
-        switch indexPath.section {
-        case 0:
-            cell.headertitle.text = "다시 찾은 건강"
-            break
-        default:
-            cell.headertitle.text = "절약한 물품"
-            break
+        switch kind {
+        case UICollectionElementKindSectionHeader:
+            guard let cell = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionElementKindSectionHeader, withReuseIdentifier: "HealthHeaderCollectionCell", for: indexPath) as? HealthHeaderCollectionViewCell else { return UICollectionReusableView() }
+            
+            switch indexPath.section {
+            case 0: cell.headertitle.text = "다시 찾은 건강"
+            default: cell.headertitle.text = "절약한 물품"
+            }
+            return cell
+        case UICollectionElementKindSectionFooter:
+            guard let cell = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionElementKindSectionFooter, withReuseIdentifier: "HealthFooterCollectionViewCell", for: indexPath) as? HealthFooterCollectionViewCell else { return UICollectionReusableView() }
+            switch indexPath.section {
+            case 1: cell.informLabel.text = "* 물품 가격은 한국 기준입니다."
+            default : cell.informLabel.text = ""
+            }
+            return cell
+        default: return UICollectionReusableView()
         }
-        return cell
     }
-    
+
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "HealthCollectionCell", for: indexPath) as! HealthCollectionViewCell
@@ -165,26 +193,26 @@ extension HealthViewController : UICollectionViewDelegate, UICollectionViewDataS
             switch indexPath.row {
             case 0:
                 cell.mainimage.image = UIImage(named: "imgDay1")
-                cell.titlelabel.text = "1일 : 햄버거 세트메뉴"
-                cell.subtitle.text = "4,500원"
-                if let second = getTime() {
-                    cell.progressView.setProgress(Float(second/86400), animated: false)
+                cell.titlelabel.text = "햄버거 세트"
+                cell.subtitle.text = "6,000원"
+                if let price = getprice() {
+                    cell.progressView.setProgress(Float(price/6000), animated: false)
                 }
                 break
             case 1:
                 cell.mainimage.image = UIImage(named: "imgDay3")
-                cell.titlelabel.text = "3일 : 영화관"
-                cell.subtitle.text = "13,000원"
-                if let second = getTime() {
-                    cell.progressView.setProgress(Float(second/259200), animated: false)
+                cell.titlelabel.text = "영화 1편"
+                cell.subtitle.text = "12,000원"
+                if let price = getprice() {
+                    cell.progressView.setProgress(Float(price/12000), animated: false)
                 }
                 break
             case 2:
                 cell.mainimage.image = UIImage(named: "imgDay7")
-                cell.titlelabel.text = "7일 : 놀이공원 자유이용권"
-                cell.subtitle.text = "35,000원"
-                if let second = getTime() {
-                    cell.progressView.setProgress(Float(second/604800), animated: false)
+                cell.titlelabel.text = "놀이공원 자유이용권"
+                cell.subtitle.text = "45,000원"
+                if let price = getprice() {
+                    cell.progressView.setProgress(Float(price/45000), animated: false)
                 }
                 break
             default:

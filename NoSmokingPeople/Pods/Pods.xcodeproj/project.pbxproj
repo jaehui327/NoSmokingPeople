@@ -7,141 +7,204 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		02BBF844E4E1576E69C47003281967BA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB7751D4D791D1183FB66D3CCA52CD8E /* QuartzCore.framework */; };
-		05ED5B55D8AAD30623AEB9B36430D576 /* KYEmbedMainControllerSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21924CFADAF9AAA865B026EBB99C391 /* KYEmbedMainControllerSegue.swift */; };
-		10EB23E9ECC4B33E16933BB1EA560B6A /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB16004343626288F928228ACE80577 /* Timeline.swift */; };
-		1B9EDEDC964E6B08F78920B4F4B9DB84 /* Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6CDCC5D1E2850B9F56F0DDB555A80FF2 /* Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3626B94094672CB1C9DEA32B9F9502E1 /* TaskDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81D59FFFD673EC8D4D680D6770832DC /* TaskDelegate.swift */; };
-		5387216E723A3C68E851CA15573CDD71 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F77675AB7EF139F48C7AD518C02537 /* Request.swift */; };
-		5830E10F4A13AF074354F443AB253FF9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33083C616C9CA8AF16FA7C690BC673C7 /* Foundation.framework */; };
-		5FC40F18DBFFCACF3FA032B58571B781 /* KYDrawerController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B9AECCA2B2479A5876379043459F8ADB /* KYDrawerController-dummy.m */; };
-		611CBFD6BCA4EADF095FB2594776D77E /* ToastCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED84E87AE4957CA0F89FB965ECF8DE9 /* ToastCenter.swift */; };
-		61200D01A1855D7920CEF835C8BE00B0 /* DispatchQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD84CEA101C43E4F4F0B60782157631 /* DispatchQueue+Alamofire.swift */; };
-		62B449845871F8DA880D40BE4935EC56 /* KYDrawerController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BB66BA56C7ED4C29A3BB184159AC961 /* KYDrawerController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		62F65AD8DC4F0F9610F4B8B4738EC094 /* ServerTrustPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D91F1279C1F1E477A5981A0B99AAE7 /* ServerTrustPolicy.swift */; };
+		0383A13C6B7C59A3D8EA592B545DABA0 /* JTAppleCalendarDelegateProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B62A08427D379BB990ED872F7AF132A /* JTAppleCalendarDelegateProtocol.swift */; };
+		05ED5B55D8AAD30623AEB9B36430D576 /* KYEmbedMainControllerSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 471027108B2CDBC9E415F09D6B74366C /* KYEmbedMainControllerSegue.swift */; };
+		07E0EADA1657252A45A43E91CDB340B0 /* Pods-NoSmokingPeople-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CF59BE0442C58078749EC50ECCA55201 /* Pods-NoSmokingPeople-dummy.m */; };
+		0BAA329D64A48D02029A6841CA8BCF86 /* Toaster-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F88AA0A152BEF0438FF3DF4B7ABA15CB /* Toaster-dummy.m */; };
+		10EB23E9ECC4B33E16933BB1EA560B6A /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5042E88A2105CC744939C1838E01EF40 /* Timeline.swift */; };
+		16BD2685485C9A3CFE20C1912A8D8D21 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3917A50EB224EEDBC66971700D698782 /* UIKit.framework */; };
+		18904C96207EA9E40B4E71F855201AD8 /* JTAppleCalendarVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB574BC58A79E787B6286AFFEA484EE /* JTAppleCalendarVariables.swift */; };
+		19AC793E08E7A12D5B62202B608BD419 /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E0A51D036145E226779B917829B831 /* Toast.swift */; };
+		1B9EDEDC964E6B08F78920B4F4B9DB84 /* Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6AA39918DC7F7E609147AF5780210553 /* Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		21A3A4A6EF95F8704DC18E4E5F509D07 /* JTAppleCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5624DD9000867034A9CCDDFF0336B7E6 /* JTAppleCollectionReusableView.swift */; };
+		2312EC4F9688E250C9D11E56B4E0AE3C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB7751D4D791D1183FB66D3CCA52CD8E /* QuartzCore.framework */; };
+		2856845AB8FCE3B1D319091061F593EF /* UserInteractionFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75BBB2F03E4B2CB57F6CD84916EADD5C /* UserInteractionFunctions.swift */; };
+		3626B94094672CB1C9DEA32B9F9502E1 /* TaskDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63697CFA98260DC21240321A18423332 /* TaskDelegate.swift */; };
+		42F0A3DBCAC670C336C5C988F6609D98 /* UICollectionViewDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEC1A70E8B39818931350F330DB2142 /* UICollectionViewDelegates.swift */; };
+		4A9A719B6A43992F3AEB871D8E704EE6 /* ToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A280D529317A418D3195C89DE5C47A1A /* ToastView.swift */; };
+		5387216E723A3C68E851CA15573CDD71 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716FBC8A369CBFCC7DC4021684E53612 /* Request.swift */; };
+		53D7D34D0142A101314ABFA663AC9D08 /* JTAppleCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBAC809B2AABB91FEFF4BE75F4DDC705 /* JTAppleCalendarView.swift */; };
+		5FC40F18DBFFCACF3FA032B58571B781 /* KYDrawerController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 645B68FE55FD0256C0F11867405FBFD4 /* KYDrawerController-dummy.m */; };
+		61200D01A1855D7920CEF835C8BE00B0 /* DispatchQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F0C145497ECEA419CA07ED988B57608 /* DispatchQueue+Alamofire.swift */; };
+		62B449845871F8DA880D40BE4935EC56 /* KYDrawerController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7263F1AD8D7F9D9089493FD9B96206DC /* KYDrawerController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		62F65AD8DC4F0F9610F4B8B4738EC094 /* ServerTrustPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CCF3C59CA7480CF5886AF304163CFB /* ServerTrustPolicy.swift */; };
 		6AD875BCD993EB7CD3FB369B273FEE4B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33083C616C9CA8AF16FA7C690BC673C7 /* Foundation.framework */; };
+		6DE7D8CE614DBA55D744EDE81C632AD8 /* CalendarStructs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729DAE4FABC980A7BF4D19B6D1A3745A /* CalendarStructs.swift */; };
+		6E8E4422AA0E96DCBB9D329BDFFB881A /* GlobalFunctionsAndExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D8842C538612B99D8121290FCBB3B8 /* GlobalFunctionsAndExtensions.swift */; };
 		73B9C996AED49ED7CF8EC2A6F1738059 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33083C616C9CA8AF16FA7C690BC673C7 /* Foundation.framework */; };
-		74EBEC8F9277C0056FF08F806E75EB4F /* KYDrawerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1907A160E4998B3A1181D52195B0FD /* KYDrawerController.swift */; };
-		7AB60BEB67D261D7B93FEE00390E3667 /* Toaster-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CA60EB7A35E430FB67B8E44956A5106A /* Toaster-dummy.m */; };
-		7B5FE28C7EA4122B0598738E54DBEBD8 /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22618FABFE0C22939A622DB7916C2B7E /* SessionDelegate.swift */; };
-		7D8CC01E8C9EFFF9F4D65406CDE0AB66 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FD08458EC6EF9C5F63B3FD9031CDDD /* Result.swift */; };
-		81D8CE62E2BF3FB456040C9E05DDC384 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3917A50EB224EEDBC66971700D698782 /* UIKit.framework */; };
-		866AE1D06BC1DC87E015FCBE8F99507F /* Toaster-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A4727D88E2AE0B27A3C5C0D005C1FFE3 /* Toaster-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9692A375BFAE5FA040BE4E82385601B1 /* Toaster.h in Headers */ = {isa = PBXBuildFile; fileRef = 31B3B6D7CCFA00F8BF9EFDF207CCE69E /* Toaster.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9756EEAFC19CE46E75F06999F6DE6DE3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33083C616C9CA8AF16FA7C690BC673C7 /* Foundation.framework */; };
-		9ED2BB2981896E0A39EFA365503F58CE /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC427B766E56E2D0DF04CA1C7390E36F /* AFError.swift */; };
-		A2A6F71B727312BD45CC7A4AAD7B0AB7 /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47EF31B9F08C049C3A3D1A5E520C518C /* NetworkReachabilityManager.swift */; };
-		A9EEEA7477981DEEBC72432DE9990A4B /* Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1721DCE0D664F1C05D4B849678E20013 /* Alamofire-dummy.m */; };
-		AE1EF48399533730D0066E04B22CA2D6 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F187DF330C2FFCBCE34EA3AD2B62A50 /* SessionManager.swift */; };
-		AF0AE8C944C8E77FAA24A173B788429A /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3B4FADDF551DBD65891CDD177A657F /* Toast.swift */; };
-		B0E9ED52C7B838DC0E95F21AD470B413 /* Pods-NoSmokingPeople-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 379CA961F2808354B9C98DA9B5EF8A63 /* Pods-NoSmokingPeople-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B65FCF589DA398C3EFE0128064E510EC /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71048BEB11D877C8EF42E4CFF810D00F /* MultipartFormData.swift */; };
-		BBEFE2F9CEB73DC7BD97FFA66A0D9D4F /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2155EBEED371BA20140248B2663E2652 /* Validation.swift */; };
-		BE5C67A07E289FE1F9BE27335B159997 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD440142AB235811F05EAC1E220EF72 /* ParameterEncoding.swift */; };
-		CB4C4CAA2E3B253B829433840A942FCE /* ToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4FE0DA035F695CCBC831EBC57BB6B3 /* ToastView.swift */; };
-		CB6D60925223897FFA2662667DF83E8A /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D02A13853DE62190CFB54572D7F0B4 /* Response.swift */; };
-		CF85F1A29EA155FAEDD59958A8B5B5C7 /* ToastWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A2291936C4C0A585B87620171621A5 /* ToastWindow.swift */; };
-		EFD264FC408EBF3BA2528E70B08DDD94 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99BA8F030C9DE869886F61DA250E048D /* Notifications.swift */; };
-		F6BECD98B97CBFEBE2C96F0E9E72A6C0 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89A89C0CE63EA4CBBF40F2AB85F5AD4 /* ResponseSerialization.swift */; };
-		F8B3D3092ED0417E8CDF32033F6122F5 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA7EE237E7CD33DA004DDAF6042B760 /* Alamofire.swift */; };
-		FE020C0F86B9EBDE87399EC0136682FE /* KYEmbedDrawerControllerSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF0B2DC40342AA6E60DB15434932DEB /* KYEmbedDrawerControllerSegue.swift */; };
-		FF68A22CE17C340280B1552B3FFBD6EE /* Pods-NoSmokingPeople-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CF59BE0442C58078749EC50ECCA55201 /* Pods-NoSmokingPeople-dummy.m */; };
+		74EBEC8F9277C0056FF08F806E75EB4F /* KYDrawerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6DADE55A1BC96E419B28265EDAC3369 /* KYDrawerController.swift */; };
+		7B5FE28C7EA4122B0598738E54DBEBD8 /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A4C98D76B71C7611B7930D929DBEEA /* SessionDelegate.swift */; };
+		7BE39092951B492E5954D8012747BFD0 /* JTAppleCalendarLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50248EF3591ED60FCE92FC8BA787384F /* JTAppleCalendarLayout.swift */; };
+		7C7023CF6E946BD65F6DD95D9C264399 /* Pods-NoSmokingPeople-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 379CA961F2808354B9C98DA9B5EF8A63 /* Pods-NoSmokingPeople-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7D8CC01E8C9EFFF9F4D65406CDE0AB66 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE51B16DA42D82144C2C19055EE5EB2 /* Result.swift */; };
+		8227E37C8430F92CF2D3964118426CA4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33083C616C9CA8AF16FA7C690BC673C7 /* Foundation.framework */; };
+		82ABFCEAD0B60449B75CF6398AD0099A /* ToastWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41898278E412D8C4BB0B9031B70A9C7B /* ToastWindow.swift */; };
+		87329FA016F0D57803855BCE3E90EC82 /* JTCalendarProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBADD8E83BF870284F8DA137392AAD4 /* JTCalendarProtocols.swift */; };
+		8D2676091E8AD25D4CE8DDDFB9B887BB /* Toaster.h in Headers */ = {isa = PBXBuildFile; fileRef = D23E5A6CA313645EB76F6F7DEA8AFE7A /* Toaster.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		913FC767632C3724042F0C8D641F0FC3 /* ToastCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C193F10069A390806FA1873DE3DD8622 /* ToastCenter.swift */; };
+		9ED2BB2981896E0A39EFA365503F58CE /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6EF3408F35A5689D07095885CCDAD4 /* AFError.swift */; };
+		A2A6F71B727312BD45CC7A4AAD7B0AB7 /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A7E86A408560F9AE0CA31145063E33 /* NetworkReachabilityManager.swift */; };
+		A4AEAFE49576DABBC489663B6DEE90DE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33083C616C9CA8AF16FA7C690BC673C7 /* Foundation.framework */; };
+		A9EEEA7477981DEEBC72432DE9990A4B /* Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A968E61DC6F35954B520089B20F6B829 /* Alamofire-dummy.m */; };
+		AD07BFC6787F19F9D7CADB48C114FDB7 /* JTAppleCalendar-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 03191CAC365DAAE94D1E84A63B66356F /* JTAppleCalendar-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AE1EF48399533730D0066E04B22CA2D6 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71340F1703157F0BD0F99F40A667509F /* SessionManager.swift */; };
+		B65FCF589DA398C3EFE0128064E510EC /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB72C51DA0DC437BA9F19C50C0A0C610 /* MultipartFormData.swift */; };
+		B815F6A8C0E87E87871758E6EAD46D89 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33083C616C9CA8AF16FA7C690BC673C7 /* Foundation.framework */; };
+		BBEFE2F9CEB73DC7BD97FFA66A0D9D4F /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EEB25EBC0DF5422985A33F15F00F7F4 /* Validation.swift */; };
+		BE5C67A07E289FE1F9BE27335B159997 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F501B96CE67C684317CE8BC166483D9 /* ParameterEncoding.swift */; };
+		CB6D60925223897FFA2662667DF83E8A /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6544EFB9A68E0319EDD3F44C9760B5E9 /* Response.swift */; };
+		D8A92946FC8119DCDFA6DC814DB78DBA /* Toaster-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 75BB327C3985C36E44C65726FF7B0C63 /* Toaster-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E10E15A8A65DB167DE5046915870021A /* JTAppleCalendarLayoutProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F3481E7BC5AF2B98046AD800867AFEE /* JTAppleCalendarLayoutProtocol.swift */; };
+		E1CF59B57CC636FECACC39325231B177 /* CalendarEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 603DCC5DB94AEF6D1AD6A95B8885D6FE /* CalendarEnums.swift */; };
+		E4E19B08166BF4E9E368134D68E9C7DE /* JTAppleCalendar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BF49D469BBD650FF744928B11770F79 /* JTAppleCalendar-dummy.m */; };
+		EFD264FC408EBF3BA2528E70B08DDD94 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8B85A69236E4D49420C144683D390F /* Notifications.swift */; };
+		F2BB49EF903A70B7B68565CCE233FB83 /* JTAppleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F4EDA02CE76B747A90C8C3AFC1D50D /* JTAppleCell.swift */; };
+		F6BECD98B97CBFEBE2C96F0E9E72A6C0 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07160566D855510670E0D0A172A99024 /* ResponseSerialization.swift */; };
+		F8B3D3092ED0417E8CDF32033F6122F5 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7390655EB9555E38DC9B506736B8828 /* Alamofire.swift */; };
+		F963037A1450F74FAE911C248EED47CE /* UIScrollViewDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9072E4E0E2C5C5D4EBAFEE659357B5D4 /* UIScrollViewDelegates.swift */; };
+		FE020C0F86B9EBDE87399EC0136682FE /* KYEmbedDrawerControllerSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FDFFFB6EE4A7DC9DF47D05D71E30F2F /* KYEmbedDrawerControllerSegue.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		0AE694E8F5B1CF4F26BA18D33364A3AF /* PBXContainerItemProxy */ = {
+		06A6BA2B87CEF274A6290812C3CE26B9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BFED2E29E95E065400F8846E0231A970;
+			remoteInfo = JTAppleCalendar;
+		};
+		35384152182B601642B69FDEC5899FFA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 88E9EC28B8B46C3631E6B242B50F4442;
 			remoteInfo = Alamofire;
 		};
-		75EBFEB741CC177205D1D21ECD5DFD7C /* PBXContainerItemProxy */ = {
+		579FE7FCEA1954CC6E16F11601833B27 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 7AF8670FDECF80EFCAA3D04318C4B4D1;
 			remoteInfo = KYDrawerController;
 		};
-		EBF9D6BEAE60162C350AD57FC19185B8 /* PBXContainerItemProxy */ = {
+		A00CCB033E827E69D5D84CA955379CEE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = EDBE573DDD9891360D7BB127F3BB5908;
+			remoteGlobalIDString = A3520246C72586334E71547DEFA6135B;
 			remoteInfo = Toaster;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		011A2918CBF1BD8251BA61E3BE44F82A /* KYDrawerController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KYDrawerController.xcconfig; sourceTree = "<group>"; };
-		06D91F1279C1F1E477A5981A0B99AAE7 /* ServerTrustPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustPolicy.swift; path = Source/ServerTrustPolicy.swift; sourceTree = "<group>"; };
+		0281F4CC72009FA359C72D0B87233DEE /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Alamofire.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		02CCF3C59CA7480CF5886AF304163CFB /* ServerTrustPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustPolicy.swift; path = Source/ServerTrustPolicy.swift; sourceTree = "<group>"; };
+		03191CAC365DAAE94D1E84A63B66356F /* JTAppleCalendar-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JTAppleCalendar-umbrella.h"; sourceTree = "<group>"; };
+		07160566D855510670E0D0A172A99024 /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
+		0B1CF4D58C23E799C452F5366A7B4E93 /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
+		0BB690B3841EAD8F9A80FA56CEE81DC9 /* JTAppleCalendar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JTAppleCalendar-prefix.pch"; sourceTree = "<group>"; };
 		0D928E23965D07DDE7A78216EE2EFE2F /* Pods-NoSmokingPeople-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NoSmokingPeople-frameworks.sh"; sourceTree = "<group>"; };
-		0F4FE0DA035F695CCBC831EBC57BB6B3 /* ToastView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ToastView.swift; path = Sources/ToastView.swift; sourceTree = "<group>"; };
-		10A08782BA5BD090F22BD81B1C7983A4 /* Toaster-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Toaster-prefix.pch"; sourceTree = "<group>"; };
-		15D231C06D7D74A28C67E5313FCEDB45 /* KYDrawerController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = KYDrawerController.modulemap; sourceTree = "<group>"; };
-		1721DCE0D664F1C05D4B849678E20013 /* Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-dummy.m"; sourceTree = "<group>"; };
-		1DA7EE237E7CD33DA004DDAF6042B760 /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
-		2155EBEED371BA20140248B2663E2652 /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
-		22618FABFE0C22939A622DB7916C2B7E /* SessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionDelegate.swift; path = Source/SessionDelegate.swift; sourceTree = "<group>"; };
-		2C1907A160E4998B3A1181D52195B0FD /* KYDrawerController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KYDrawerController.swift; path = KYDrawerController/Classes/KYDrawerController.swift; sourceTree = "<group>"; };
+		0F0C145497ECEA419CA07ED988B57608 /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Alamofire.swift"; path = "Source/DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
+		1AA821828C1EDE623128ADABFEA9CC28 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1AE51B16DA42D82144C2C19055EE5EB2 /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Source/Result.swift; sourceTree = "<group>"; };
+		1B3CDEA471FED5148E02419FA64CB071 /* JTAppleCalendar.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JTAppleCalendar.xcconfig; sourceTree = "<group>"; };
+		1BF49D469BBD650FF744928B11770F79 /* JTAppleCalendar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JTAppleCalendar-dummy.m"; sourceTree = "<group>"; };
+		1F59B87399731E821A55529601C0BACA /* KYDrawerController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = KYDrawerController.framework; path = KYDrawerController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		22C4243C09C471D2183FA352694214A4 /* Toaster-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Toaster-prefix.pch"; sourceTree = "<group>"; };
+		2660C1D5E6C18BFD2090DC2348BC762C /* Alamofire.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.xcconfig; sourceTree = "<group>"; };
+		28A8DB5CD67F4119EC4BF516C59B5F87 /* KYDrawerController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KYDrawerController-prefix.pch"; sourceTree = "<group>"; };
 		2C53F40CD34D542F57E785AF471821F3 /* Pods-NoSmokingPeople-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NoSmokingPeople-acknowledgements.markdown"; sourceTree = "<group>"; };
-		2F187DF330C2FFCBCE34EA3AD2B62A50 /* SessionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionManager.swift; path = Source/SessionManager.swift; sourceTree = "<group>"; };
-		31B3B6D7CCFA00F8BF9EFDF207CCE69E /* Toaster.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Toaster.h; path = Sources/Toaster.h; sourceTree = "<group>"; };
 		33083C616C9CA8AF16FA7C690BC673C7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		379CA961F2808354B9C98DA9B5EF8A63 /* Pods-NoSmokingPeople-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NoSmokingPeople-umbrella.h"; sourceTree = "<group>"; };
 		38F9024A0F0CC121BAA670A7779DF07C /* Pods-NoSmokingPeople.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NoSmokingPeople.release.xcconfig"; sourceTree = "<group>"; };
 		3917A50EB224EEDBC66971700D698782 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		39216A1F228B8BF0BDB6A58E5B47D7D2 /* Pods-NoSmokingPeople-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NoSmokingPeople-resources.sh"; sourceTree = "<group>"; };
-		3AD440142AB235811F05EAC1E220EF72 /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
+		3B62A08427D379BB990ED872F7AF132A /* JTAppleCalendarDelegateProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTAppleCalendarDelegateProtocol.swift; path = Sources/JTAppleCalendarDelegateProtocol.swift; sourceTree = "<group>"; };
+		3DEB8D909ECD0A1419218035DF55E18B /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Alamofire.modulemap; sourceTree = "<group>"; };
+		41898278E412D8C4BB0B9031B70A9C7B /* ToastWindow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ToastWindow.swift; path = Sources/ToastWindow.swift; sourceTree = "<group>"; };
 		445E6235502E3D5D48B88227BD3A3A04 /* Pods-NoSmokingPeople-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NoSmokingPeople-acknowledgements.plist"; sourceTree = "<group>"; };
-		44D02A13853DE62190CFB54572D7F0B4 /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
-		454A2AE4A7E168D1D64E137AF92874C0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		467F5153AC30C299318D3569B8A31772 /* Toaster.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Toaster.modulemap; sourceTree = "<group>"; };
-		47EF31B9F08C049C3A3D1A5E520C518C /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = Source/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
-		5BD84CEA101C43E4F4F0B60782157631 /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Alamofire.swift"; path = "Source/DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
+		45F4EDA02CE76B747A90C8C3AFC1D50D /* JTAppleCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTAppleCell.swift; path = Sources/JTAppleCell.swift; sourceTree = "<group>"; };
+		471027108B2CDBC9E415F09D6B74366C /* KYEmbedMainControllerSegue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KYEmbedMainControllerSegue.swift; path = KYDrawerController/Classes/KYEmbedMainControllerSegue.swift; sourceTree = "<group>"; };
+		4A78510A22517FC10FC9C927FA7EA794 /* Toaster.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Toaster.framework; path = Toaster.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		50248EF3591ED60FCE92FC8BA787384F /* JTAppleCalendarLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTAppleCalendarLayout.swift; path = Sources/JTAppleCalendarLayout.swift; sourceTree = "<group>"; };
+		5042E88A2105CC744939C1838E01EF40 /* Timeline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Timeline.swift; path = Source/Timeline.swift; sourceTree = "<group>"; };
+		5624DD9000867034A9CCDDFF0336B7E6 /* JTAppleCollectionReusableView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTAppleCollectionReusableView.swift; path = Sources/JTAppleCollectionReusableView.swift; sourceTree = "<group>"; };
+		603DCC5DB94AEF6D1AD6A95B8885D6FE /* CalendarEnums.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CalendarEnums.swift; path = Sources/CalendarEnums.swift; sourceTree = "<group>"; };
+		63697CFA98260DC21240321A18423332 /* TaskDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TaskDelegate.swift; path = Source/TaskDelegate.swift; sourceTree = "<group>"; };
+		645B68FE55FD0256C0F11867405FBFD4 /* KYDrawerController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KYDrawerController-dummy.m"; sourceTree = "<group>"; };
+		6544EFB9A68E0319EDD3F44C9760B5E9 /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
+		6AA39918DC7F7E609147AF5780210553 /* Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-umbrella.h"; sourceTree = "<group>"; };
 		6B4F522B40C3A74AA47B9A3C03214C68 /* Pods-NoSmokingPeople.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NoSmokingPeople.debug.xcconfig"; sourceTree = "<group>"; };
-		6BB66BA56C7ED4C29A3BB184159AC961 /* KYDrawerController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KYDrawerController-umbrella.h"; sourceTree = "<group>"; };
-		6CDCC5D1E2850B9F56F0DDB555A80FF2 /* Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-umbrella.h"; sourceTree = "<group>"; };
-		6FB16004343626288F928228ACE80577 /* Timeline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Timeline.swift; path = Source/Timeline.swift; sourceTree = "<group>"; };
-		71048BEB11D877C8EF42E4CFF810D00F /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
-		77A2291936C4C0A585B87620171621A5 /* ToastWindow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ToastWindow.swift; path = Sources/ToastWindow.swift; sourceTree = "<group>"; };
+		6EEB25EBC0DF5422985A33F15F00F7F4 /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
+		6F501B96CE67C684317CE8BC166483D9 /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
+		6FDFFFB6EE4A7DC9DF47D05D71E30F2F /* KYEmbedDrawerControllerSegue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KYEmbedDrawerControllerSegue.swift; path = KYDrawerController/Classes/KYEmbedDrawerControllerSegue.swift; sourceTree = "<group>"; };
+		71340F1703157F0BD0F99F40A667509F /* SessionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionManager.swift; path = Source/SessionManager.swift; sourceTree = "<group>"; };
+		716FBC8A369CBFCC7DC4021684E53612 /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
+		723CFCF6FEDB92A838D9CD4E08D98CFD /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7263F1AD8D7F9D9089493FD9B96206DC /* KYDrawerController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KYDrawerController-umbrella.h"; sourceTree = "<group>"; };
+		729DAE4FABC980A7BF4D19B6D1A3745A /* CalendarStructs.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CalendarStructs.swift; path = Sources/CalendarStructs.swift; sourceTree = "<group>"; };
+		75BB327C3985C36E44C65726FF7B0C63 /* Toaster-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Toaster-umbrella.h"; sourceTree = "<group>"; };
+		75BBB2F03E4B2CB57F6CD84916EADD5C /* UserInteractionFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UserInteractionFunctions.swift; path = Sources/UserInteractionFunctions.swift; sourceTree = "<group>"; };
+		7CB574BC58A79E787B6286AFFEA484EE /* JTAppleCalendarVariables.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTAppleCalendarVariables.swift; path = Sources/JTAppleCalendarVariables.swift; sourceTree = "<group>"; };
 		81809F999B8059FB43D0CADF687B8C4F /* Pods-NoSmokingPeople.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-NoSmokingPeople.modulemap"; sourceTree = "<group>"; };
-		83984B0AB9398237A1CE8BECE7D49C50 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		87232F753D427C04AA822B46C43C33F7 /* Pods_NoSmokingPeople.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_NoSmokingPeople.framework; path = "Pods-NoSmokingPeople.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		849999ECC21DDDB46A81CA636CD7592C /* Toaster.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Toaster.xcconfig; sourceTree = "<group>"; };
+		87A7E86A408560F9AE0CA31145063E33 /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = Source/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
+		8F3481E7BC5AF2B98046AD800867AFEE /* JTAppleCalendarLayoutProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTAppleCalendarLayoutProtocol.swift; path = Sources/JTAppleCalendarLayoutProtocol.swift; sourceTree = "<group>"; };
+		9028EBA3267477ED286ED14302BA2EF9 /* Toaster.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Toaster.modulemap; sourceTree = "<group>"; };
+		9072E4E0E2C5C5D4EBAFEE659357B5D4 /* UIScrollViewDelegates.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIScrollViewDelegates.swift; path = Sources/UIScrollViewDelegates.swift; sourceTree = "<group>"; };
+		92D8842C538612B99D8121290FCBB3B8 /* GlobalFunctionsAndExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GlobalFunctionsAndExtensions.swift; path = Sources/GlobalFunctionsAndExtensions.swift; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		96EE7C2DAAFB3371AE5B6F289F3E69F9 /* Toaster.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Toaster.framework; path = Toaster.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		97E6003028A9E6849E748AF94A38C71E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		99BA8F030C9DE869886F61DA250E048D /* Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = Source/Notifications.swift; sourceTree = "<group>"; };
-		9BF0B2DC40342AA6E60DB15434932DEB /* KYEmbedDrawerControllerSegue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KYEmbedDrawerControllerSegue.swift; path = KYDrawerController/Classes/KYEmbedDrawerControllerSegue.swift; sourceTree = "<group>"; };
-		9E73F2BC1736EA3275CAB2DB4B9BD873 /* KYDrawerController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KYDrawerController-prefix.pch"; sourceTree = "<group>"; };
-		9F521762358EB7F14B53FCC189AFE709 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Alamofire.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A36DA492292A621DE0E039F599648E88 /* Toaster.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Toaster.xcconfig; sourceTree = "<group>"; };
-		A3FD08458EC6EF9C5F63B3FD9031CDDD /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Source/Result.swift; sourceTree = "<group>"; };
-		A4727D88E2AE0B27A3C5C0D005C1FFE3 /* Toaster-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Toaster-umbrella.h"; sourceTree = "<group>"; };
-		A5DBB9AE5D4F19C6ED641A8557CA5350 /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
-		A81D59FFFD673EC8D4D680D6770832DC /* TaskDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TaskDelegate.swift; path = Source/TaskDelegate.swift; sourceTree = "<group>"; };
-		B9AECCA2B2479A5876379043459F8ADB /* KYDrawerController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KYDrawerController-dummy.m"; sourceTree = "<group>"; };
-		CA60EB7A35E430FB67B8E44956A5106A /* Toaster-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Toaster-dummy.m"; sourceTree = "<group>"; };
+		9D56F5909B73113C4637181B3D271C85 /* KYDrawerController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = KYDrawerController.modulemap; sourceTree = "<group>"; };
+		9EA357DAC2FCBF0DA4ED6E5D1396B794 /* Pods_NoSmokingPeople.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_NoSmokingPeople.framework; path = "Pods-NoSmokingPeople.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A280D529317A418D3195C89DE5C47A1A /* ToastView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ToastView.swift; path = Sources/ToastView.swift; sourceTree = "<group>"; };
+		A968E61DC6F35954B520089B20F6B829 /* Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-dummy.m"; sourceTree = "<group>"; };
+		ADEC1A70E8B39818931350F330DB2142 /* UICollectionViewDelegates.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UICollectionViewDelegates.swift; path = Sources/UICollectionViewDelegates.swift; sourceTree = "<group>"; };
+		BA71472384E812AA71D6A3B80A81D416 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF47ADE2022B29C7966092AB09EE7AF1 /* KYDrawerController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KYDrawerController.xcconfig; sourceTree = "<group>"; };
+		C193F10069A390806FA1873DE3DD8622 /* ToastCenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ToastCenter.swift; path = Sources/ToastCenter.swift; sourceTree = "<group>"; };
 		CF59BE0442C58078749EC50ECCA55201 /* Pods-NoSmokingPeople-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NoSmokingPeople-dummy.m"; sourceTree = "<group>"; };
-		CFC47A49FC313ECBD99904DABC8ECB70 /* KYDrawerController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = KYDrawerController.framework; path = KYDrawerController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CFF5E9458447700A3B8879CE0308E8B2 /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Alamofire.modulemap; sourceTree = "<group>"; };
-		D1F77675AB7EF139F48C7AD518C02537 /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
-		D21924CFADAF9AAA865B026EBB99C391 /* KYEmbedMainControllerSegue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KYEmbedMainControllerSegue.swift; path = KYDrawerController/Classes/KYEmbedMainControllerSegue.swift; sourceTree = "<group>"; };
-		D89A89C0CE63EA4CBBF40F2AB85F5AD4 /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
-		DE3B4FADDF551DBD65891CDD177A657F /* Toast.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Toast.swift; path = Sources/Toast.swift; sourceTree = "<group>"; };
-		EED84E87AE4957CA0F89FB965ECF8DE9 /* ToastCenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ToastCenter.swift; path = Sources/ToastCenter.swift; sourceTree = "<group>"; };
-		F20ACC9840DD8D9997CA2CD0128E49A8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F583569FD3A833447790D50CA20C6510 /* Alamofire.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.xcconfig; sourceTree = "<group>"; };
+		D23E5A6CA313645EB76F6F7DEA8AFE7A /* Toaster.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Toaster.h; path = Sources/Toaster.h; sourceTree = "<group>"; };
+		D7390655EB9555E38DC9B506736B8828 /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
+		D8D36E7E8F5765A60C8C15D3873C6A0D /* JTAppleCalendar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = JTAppleCalendar.framework; path = JTAppleCalendar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD31C83B2BF909D45CFDBD928C9DA01C /* JTAppleCalendar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = JTAppleCalendar.modulemap; sourceTree = "<group>"; };
+		DEBADD8E83BF870284F8DA137392AAD4 /* JTCalendarProtocols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTCalendarProtocols.swift; path = Sources/JTCalendarProtocols.swift; sourceTree = "<group>"; };
+		EB72C51DA0DC437BA9F19C50C0A0C610 /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
+		ED1AE124207353721F1DD161A59B4075 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F2A4C98D76B71C7611B7930D929DBEEA /* SessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionDelegate.swift; path = Source/SessionDelegate.swift; sourceTree = "<group>"; };
+		F4E0A51D036145E226779B917829B831 /* Toast.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Toast.swift; path = Sources/Toast.swift; sourceTree = "<group>"; };
+		F6DADE55A1BC96E419B28265EDAC3369 /* KYDrawerController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KYDrawerController.swift; path = KYDrawerController/Classes/KYDrawerController.swift; sourceTree = "<group>"; };
+		F88AA0A152BEF0438FF3DF4B7ABA15CB /* Toaster-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Toaster-dummy.m"; sourceTree = "<group>"; };
+		FB6EF3408F35A5689D07095885CCDAD4 /* AFError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFError.swift; path = Source/AFError.swift; sourceTree = "<group>"; };
 		FB7751D4D791D1183FB66D3CCA52CD8E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
-		FC427B766E56E2D0DF04CA1C7390E36F /* AFError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFError.swift; path = Source/AFError.swift; sourceTree = "<group>"; };
+		FB8B85A69236E4D49420C144683D390F /* Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = Source/Notifications.swift; sourceTree = "<group>"; };
+		FBAC809B2AABB91FEFF4BE75F4DDC705 /* JTAppleCalendarView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTAppleCalendarView.swift; path = Sources/JTAppleCalendarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		26F7C8901B9F93200C98908EC992E62F /* Frameworks */ = {
+		206537A581766068B6BB410FFD1F29FA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9756EEAFC19CE46E75F06999F6DE6DE3 /* Foundation.framework in Frameworks */,
+				A4AEAFE49576DABBC489663B6DEE90DE /* Foundation.framework in Frameworks */,
+				2312EC4F9688E250C9D11E56B4E0AE3C /* QuartzCore.framework in Frameworks */,
+				16BD2685485C9A3CFE20C1912A8D8D21 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		456A38528F491C16A318D4091CF2E1F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B815F6A8C0E87E87871758E6EAD46D89 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4AC902DF32ACD486D423F50648B2A045 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8227E37C8430F92CF2D3964118426CA4 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -161,16 +224,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FDE5D90FDA306D9D87EB8CD6CFD47AE7 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5830E10F4A13AF074354F443AB253FF9 /* Foundation.framework in Frameworks */,
-				02BBF844E4E1576E69C47003281967BA /* QuartzCore.framework in Frameworks */,
-				81D8CE62E2BF3FB456040C9E05DDC384 /* UIKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -182,6 +235,20 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
+		11A01AC1B115C8C65A38168D4EEBADE1 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3DEB8D909ECD0A1419218035DF55E18B /* Alamofire.modulemap */,
+				2660C1D5E6C18BFD2090DC2348BC762C /* Alamofire.xcconfig */,
+				A968E61DC6F35954B520089B20F6B829 /* Alamofire-dummy.m */,
+				0B1CF4D58C23E799C452F5366A7B4E93 /* Alamofire-prefix.pch */,
+				6AA39918DC7F7E609147AF5780210553 /* Alamofire-umbrella.h */,
+				ED1AE124207353721F1DD161A59B4075 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Alamofire";
+			sourceTree = "<group>";
+		};
 		122DA2E5084A4393C29BE363C764795C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -190,44 +257,93 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		2C69F06146845A0307867C723DE87F97 /* Support Files */ = {
+		2BCA2173C2C4AAB6BAD31CFAEE286D34 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				454A2AE4A7E168D1D64E137AF92874C0 /* Info.plist */,
-				467F5153AC30C299318D3569B8A31772 /* Toaster.modulemap */,
-				A36DA492292A621DE0E039F599648E88 /* Toaster.xcconfig */,
-				CA60EB7A35E430FB67B8E44956A5106A /* Toaster-dummy.m */,
-				10A08782BA5BD090F22BD81B1C7983A4 /* Toaster-prefix.pch */,
-				A4727D88E2AE0B27A3C5C0D005C1FFE3 /* Toaster-umbrella.h */,
+				723CFCF6FEDB92A838D9CD4E08D98CFD /* Info.plist */,
+				9028EBA3267477ED286ED14302BA2EF9 /* Toaster.modulemap */,
+				849999ECC21DDDB46A81CA636CD7592C /* Toaster.xcconfig */,
+				F88AA0A152BEF0438FF3DF4B7ABA15CB /* Toaster-dummy.m */,
+				22C4243C09C471D2183FA352694214A4 /* Toaster-prefix.pch */,
+				75BB327C3985C36E44C65726FF7B0C63 /* Toaster-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/Toaster";
 			sourceTree = "<group>";
 		};
-		4E8FA5EF83D0DD123E331F4B0098D5F4 /* KYDrawerController */ = {
+		3F5F06DCE765D1A24F35B4DDA4E13D15 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2C1907A160E4998B3A1181D52195B0FD /* KYDrawerController.swift */,
-				9BF0B2DC40342AA6E60DB15434932DEB /* KYEmbedDrawerControllerSegue.swift */,
-				D21924CFADAF9AAA865B026EBB99C391 /* KYEmbedMainControllerSegue.swift */,
-				A3F61F08DAA9C4473934CDD7DC78D86C /* Support Files */,
+				0281F4CC72009FA359C72D0B87233DEE /* Alamofire.framework */,
+				D8D36E7E8F5765A60C8C15D3873C6A0D /* JTAppleCalendar.framework */,
+				1F59B87399731E821A55529601C0BACA /* KYDrawerController.framework */,
+				9EA357DAC2FCBF0DA4ED6E5D1396B794 /* Pods_NoSmokingPeople.framework */,
+				4A78510A22517FC10FC9C927FA7EA794 /* Toaster.framework */,
 			);
-			name = KYDrawerController;
-			path = KYDrawerController;
+			name = Products;
 			sourceTree = "<group>";
 		};
-		5D616FDBCA6FBE7D76D205EC6326EA7A /* Support Files */ = {
+		502801930E4481E63F6BB1B2D3DD75D5 /* JTAppleCalendar */ = {
 			isa = PBXGroup;
 			children = (
-				CFF5E9458447700A3B8879CE0308E8B2 /* Alamofire.modulemap */,
-				F583569FD3A833447790D50CA20C6510 /* Alamofire.xcconfig */,
-				1721DCE0D664F1C05D4B849678E20013 /* Alamofire-dummy.m */,
-				A5DBB9AE5D4F19C6ED641A8557CA5350 /* Alamofire-prefix.pch */,
-				6CDCC5D1E2850B9F56F0DDB555A80FF2 /* Alamofire-umbrella.h */,
-				F20ACC9840DD8D9997CA2CD0128E49A8 /* Info.plist */,
+				603DCC5DB94AEF6D1AD6A95B8885D6FE /* CalendarEnums.swift */,
+				729DAE4FABC980A7BF4D19B6D1A3745A /* CalendarStructs.swift */,
+				92D8842C538612B99D8121290FCBB3B8 /* GlobalFunctionsAndExtensions.swift */,
+				3B62A08427D379BB990ED872F7AF132A /* JTAppleCalendarDelegateProtocol.swift */,
+				50248EF3591ED60FCE92FC8BA787384F /* JTAppleCalendarLayout.swift */,
+				8F3481E7BC5AF2B98046AD800867AFEE /* JTAppleCalendarLayoutProtocol.swift */,
+				7CB574BC58A79E787B6286AFFEA484EE /* JTAppleCalendarVariables.swift */,
+				FBAC809B2AABB91FEFF4BE75F4DDC705 /* JTAppleCalendarView.swift */,
+				45F4EDA02CE76B747A90C8C3AFC1D50D /* JTAppleCell.swift */,
+				5624DD9000867034A9CCDDFF0336B7E6 /* JTAppleCollectionReusableView.swift */,
+				DEBADD8E83BF870284F8DA137392AAD4 /* JTCalendarProtocols.swift */,
+				ADEC1A70E8B39818931350F330DB2142 /* UICollectionViewDelegates.swift */,
+				9072E4E0E2C5C5D4EBAFEE659357B5D4 /* UIScrollViewDelegates.swift */,
+				75BBB2F03E4B2CB57F6CD84916EADD5C /* UserInteractionFunctions.swift */,
+				E3C94757AFCB8FD44F5AE43304CCFABF /* Support Files */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/Alamofire";
+			name = JTAppleCalendar;
+			path = JTAppleCalendar;
+			sourceTree = "<group>";
+		};
+		787912B8C2529708D7510F22025EE043 /* Toaster */ = {
+			isa = PBXGroup;
+			children = (
+				F4E0A51D036145E226779B917829B831 /* Toast.swift */,
+				C193F10069A390806FA1873DE3DD8622 /* ToastCenter.swift */,
+				D23E5A6CA313645EB76F6F7DEA8AFE7A /* Toaster.h */,
+				A280D529317A418D3195C89DE5C47A1A /* ToastView.swift */,
+				41898278E412D8C4BB0B9031B70A9C7B /* ToastWindow.swift */,
+				2BCA2173C2C4AAB6BAD31CFAEE286D34 /* Support Files */,
+			);
+			name = Toaster;
+			path = Toaster;
+			sourceTree = "<group>";
+		};
+		79C06F201C4E3395EF74B13D5077F5F1 /* Alamofire */ = {
+			isa = PBXGroup;
+			children = (
+				FB6EF3408F35A5689D07095885CCDAD4 /* AFError.swift */,
+				D7390655EB9555E38DC9B506736B8828 /* Alamofire.swift */,
+				0F0C145497ECEA419CA07ED988B57608 /* DispatchQueue+Alamofire.swift */,
+				EB72C51DA0DC437BA9F19C50C0A0C610 /* MultipartFormData.swift */,
+				87A7E86A408560F9AE0CA31145063E33 /* NetworkReachabilityManager.swift */,
+				FB8B85A69236E4D49420C144683D390F /* Notifications.swift */,
+				6F501B96CE67C684317CE8BC166483D9 /* ParameterEncoding.swift */,
+				716FBC8A369CBFCC7DC4021684E53612 /* Request.swift */,
+				6544EFB9A68E0319EDD3F44C9760B5E9 /* Response.swift */,
+				07160566D855510670E0D0A172A99024 /* ResponseSerialization.swift */,
+				1AE51B16DA42D82144C2C19055EE5EB2 /* Result.swift */,
+				02CCF3C59CA7480CF5886AF304163CFB /* ServerTrustPolicy.swift */,
+				F2A4C98D76B71C7611B7930D929DBEEA /* SessionDelegate.swift */,
+				71340F1703157F0BD0F99F40A667509F /* SessionManager.swift */,
+				63697CFA98260DC21240321A18423332 /* TaskDelegate.swift */,
+				5042E88A2105CC744939C1838E01EF40 /* Timeline.swift */,
+				6EEB25EBC0DF5422985A33F15F00F7F4 /* Validation.swift */,
+				11A01AC1B115C8C65A38168D4EEBADE1 /* Support Files */,
+			);
+			name = Alamofire;
+			path = Alamofire;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -235,8 +351,8 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				122DA2E5084A4393C29BE363C764795C /* Frameworks */,
-				FCA5B6AC06CD492C10306DE7511EB758 /* Pods */,
-				E6F33CBBEA63E2DD98370C1D5F27C106 /* Products */,
+				8F15656322A3FBD1867D220DC9F0B539 /* Pods */,
+				3F5F06DCE765D1A24F35B4DDA4E13D15 /* Products */,
 				1113927896727FF7391BDF6EB4BCC69B /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -259,6 +375,17 @@
 			path = "Target Support Files/Pods-NoSmokingPeople";
 			sourceTree = "<group>";
 		};
+		8F15656322A3FBD1867D220DC9F0B539 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				79C06F201C4E3395EF74B13D5077F5F1 /* Alamofire */,
+				502801930E4481E63F6BB1B2D3DD75D5 /* JTAppleCalendar */,
+				B900FF2077B7D04670E96B6020173594 /* KYDrawerController */,
+				787912B8C2529708D7510F22025EE043 /* Toaster */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		93A319F2C1969B7AA0B17444A3F8BA22 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -269,89 +396,63 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		A3F61F08DAA9C4473934CDD7DC78D86C /* Support Files */ = {
+		9A45502AE3B062FB5939E678786F4409 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				83984B0AB9398237A1CE8BECE7D49C50 /* Info.plist */,
-				15D231C06D7D74A28C67E5313FCEDB45 /* KYDrawerController.modulemap */,
-				011A2918CBF1BD8251BA61E3BE44F82A /* KYDrawerController.xcconfig */,
-				B9AECCA2B2479A5876379043459F8ADB /* KYDrawerController-dummy.m */,
-				9E73F2BC1736EA3275CAB2DB4B9BD873 /* KYDrawerController-prefix.pch */,
-				6BB66BA56C7ED4C29A3BB184159AC961 /* KYDrawerController-umbrella.h */,
+				BA71472384E812AA71D6A3B80A81D416 /* Info.plist */,
+				9D56F5909B73113C4637181B3D271C85 /* KYDrawerController.modulemap */,
+				BF47ADE2022B29C7966092AB09EE7AF1 /* KYDrawerController.xcconfig */,
+				645B68FE55FD0256C0F11867405FBFD4 /* KYDrawerController-dummy.m */,
+				28A8DB5CD67F4119EC4BF516C59B5F87 /* KYDrawerController-prefix.pch */,
+				7263F1AD8D7F9D9089493FD9B96206DC /* KYDrawerController-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/KYDrawerController";
 			sourceTree = "<group>";
 		};
-		C8893190C8531070F17523437F2A9B9C /* Toaster */ = {
+		B900FF2077B7D04670E96B6020173594 /* KYDrawerController */ = {
 			isa = PBXGroup;
 			children = (
-				DE3B4FADDF551DBD65891CDD177A657F /* Toast.swift */,
-				EED84E87AE4957CA0F89FB965ECF8DE9 /* ToastCenter.swift */,
-				31B3B6D7CCFA00F8BF9EFDF207CCE69E /* Toaster.h */,
-				0F4FE0DA035F695CCBC831EBC57BB6B3 /* ToastView.swift */,
-				77A2291936C4C0A585B87620171621A5 /* ToastWindow.swift */,
-				2C69F06146845A0307867C723DE87F97 /* Support Files */,
+				F6DADE55A1BC96E419B28265EDAC3369 /* KYDrawerController.swift */,
+				6FDFFFB6EE4A7DC9DF47D05D71E30F2F /* KYEmbedDrawerControllerSegue.swift */,
+				471027108B2CDBC9E415F09D6B74366C /* KYEmbedMainControllerSegue.swift */,
+				9A45502AE3B062FB5939E678786F4409 /* Support Files */,
 			);
-			name = Toaster;
-			path = Toaster;
+			name = KYDrawerController;
+			path = KYDrawerController;
 			sourceTree = "<group>";
 		};
-		CC3F004A4E9C547A77A5D4AA91C57F47 /* Alamofire */ = {
+		E3C94757AFCB8FD44F5AE43304CCFABF /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				FC427B766E56E2D0DF04CA1C7390E36F /* AFError.swift */,
-				1DA7EE237E7CD33DA004DDAF6042B760 /* Alamofire.swift */,
-				5BD84CEA101C43E4F4F0B60782157631 /* DispatchQueue+Alamofire.swift */,
-				71048BEB11D877C8EF42E4CFF810D00F /* MultipartFormData.swift */,
-				47EF31B9F08C049C3A3D1A5E520C518C /* NetworkReachabilityManager.swift */,
-				99BA8F030C9DE869886F61DA250E048D /* Notifications.swift */,
-				3AD440142AB235811F05EAC1E220EF72 /* ParameterEncoding.swift */,
-				D1F77675AB7EF139F48C7AD518C02537 /* Request.swift */,
-				44D02A13853DE62190CFB54572D7F0B4 /* Response.swift */,
-				D89A89C0CE63EA4CBBF40F2AB85F5AD4 /* ResponseSerialization.swift */,
-				A3FD08458EC6EF9C5F63B3FD9031CDDD /* Result.swift */,
-				06D91F1279C1F1E477A5981A0B99AAE7 /* ServerTrustPolicy.swift */,
-				22618FABFE0C22939A622DB7916C2B7E /* SessionDelegate.swift */,
-				2F187DF330C2FFCBCE34EA3AD2B62A50 /* SessionManager.swift */,
-				A81D59FFFD673EC8D4D680D6770832DC /* TaskDelegate.swift */,
-				6FB16004343626288F928228ACE80577 /* Timeline.swift */,
-				2155EBEED371BA20140248B2663E2652 /* Validation.swift */,
-				5D616FDBCA6FBE7D76D205EC6326EA7A /* Support Files */,
+				1AA821828C1EDE623128ADABFEA9CC28 /* Info.plist */,
+				DD31C83B2BF909D45CFDBD928C9DA01C /* JTAppleCalendar.modulemap */,
+				1B3CDEA471FED5148E02419FA64CB071 /* JTAppleCalendar.xcconfig */,
+				1BF49D469BBD650FF744928B11770F79 /* JTAppleCalendar-dummy.m */,
+				0BB690B3841EAD8F9A80FA56CEE81DC9 /* JTAppleCalendar-prefix.pch */,
+				03191CAC365DAAE94D1E84A63B66356F /* JTAppleCalendar-umbrella.h */,
 			);
-			name = Alamofire;
-			path = Alamofire;
-			sourceTree = "<group>";
-		};
-		E6F33CBBEA63E2DD98370C1D5F27C106 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				9F521762358EB7F14B53FCC189AFE709 /* Alamofire.framework */,
-				CFC47A49FC313ECBD99904DABC8ECB70 /* KYDrawerController.framework */,
-				87232F753D427C04AA822B46C43C33F7 /* Pods_NoSmokingPeople.framework */,
-				96EE7C2DAAFB3371AE5B6F289F3E69F9 /* Toaster.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		FCA5B6AC06CD492C10306DE7511EB758 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				CC3F004A4E9C547A77A5D4AA91C57F47 /* Alamofire */,
-				4E8FA5EF83D0DD123E331F4B0098D5F4 /* KYDrawerController */,
-				C8893190C8531070F17523437F2A9B9C /* Toaster */,
-			);
-			name = Pods;
+			name = "Support Files";
+			path = "../Target Support Files/JTAppleCalendar";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		640DF14FB2A21B8B834CE4AD459F076A /* Headers */ = {
+		32D424ADA0429AB0EFC8A3774A75EF55 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B0E9ED52C7B838DC0E95F21AD470B413 /* Pods-NoSmokingPeople-umbrella.h in Headers */,
+				D8A92946FC8119DCDFA6DC814DB78DBA /* Toaster-umbrella.h in Headers */,
+				8D2676091E8AD25D4CE8DDDFB9B887BB /* Toaster.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B900A28FAE8D34979667D44386AA2D9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C7023CF6E946BD65F6DD95D9C264399 /* Pods-NoSmokingPeople-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -371,38 +472,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DBFA1A308C2CC7D14C967DE9BEC738C6 /* Headers */ = {
+		EB3B104AA552AE0C55DA5E3D426A375A /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				866AE1D06BC1DC87E015FCBE8F99507F /* Toaster-umbrella.h in Headers */,
-				9692A375BFAE5FA040BE4E82385601B1 /* Toaster.h in Headers */,
+				AD07BFC6787F19F9D7CADB48C114FDB7 /* JTAppleCalendar-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		20A8CAA531DC0916D8B898F6C2ACABF9 /* Pods-NoSmokingPeople */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 8800FCA1A0F54650FC1DE3C2CAED2EDB /* Build configuration list for PBXNativeTarget "Pods-NoSmokingPeople" */;
-			buildPhases = (
-				0D7D50F3619A893910E64A0B250CFB5B /* Sources */,
-				26F7C8901B9F93200C98908EC992E62F /* Frameworks */,
-				640DF14FB2A21B8B834CE4AD459F076A /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				2F599EAA1A86AC225777DDA96960609E /* PBXTargetDependency */,
-				1077F608375A32C3F1FC12252727DC88 /* PBXTargetDependency */,
-				B03751C31D507C0EDA46FE9B56435B85 /* PBXTargetDependency */,
-			);
-			name = "Pods-NoSmokingPeople";
-			productName = "Pods-NoSmokingPeople";
-			productReference = 87232F753D427C04AA822B46C43C33F7 /* Pods_NoSmokingPeople.framework */;
-			productType = "com.apple.product-type.framework";
-		};
 		7AF8670FDECF80EFCAA3D04318C4B4D1 /* KYDrawerController */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 235787AAA4D655650FA93DB4FB2D308A /* Build configuration list for PBXNativeTarget "KYDrawerController" */;
@@ -417,7 +497,7 @@
 			);
 			name = KYDrawerController;
 			productName = KYDrawerController;
-			productReference = CFC47A49FC313ECBD99904DABC8ECB70 /* KYDrawerController.framework */;
+			productReference = 1F59B87399731E821A55529601C0BACA /* KYDrawerController.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		88E9EC28B8B46C3631E6B242B50F4442 /* Alamofire */ = {
@@ -434,16 +514,16 @@
 			);
 			name = Alamofire;
 			productName = Alamofire;
-			productReference = 9F521762358EB7F14B53FCC189AFE709 /* Alamofire.framework */;
+			productReference = 0281F4CC72009FA359C72D0B87233DEE /* Alamofire.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		EDBE573DDD9891360D7BB127F3BB5908 /* Toaster */ = {
+		A3520246C72586334E71547DEFA6135B /* Toaster */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6E514ECFE5259E44C8E1991EE7256B26 /* Build configuration list for PBXNativeTarget "Toaster" */;
+			buildConfigurationList = AFCE306618BB01FC858FED0A981997BD /* Build configuration list for PBXNativeTarget "Toaster" */;
 			buildPhases = (
-				96BE0A07765551A2D240837BFE007F68 /* Sources */,
-				FDE5D90FDA306D9D87EB8CD6CFD47AE7 /* Frameworks */,
-				DBFA1A308C2CC7D14C967DE9BEC738C6 /* Headers */,
+				2A60E46D4B2B15AAABE81E58A6BFFF0B /* Sources */,
+				206537A581766068B6BB410FFD1F29FA /* Frameworks */,
+				32D424ADA0429AB0EFC8A3774A75EF55 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -451,7 +531,45 @@
 			);
 			name = Toaster;
 			productName = Toaster;
-			productReference = 96EE7C2DAAFB3371AE5B6F289F3E69F9 /* Toaster.framework */;
+			productReference = 4A78510A22517FC10FC9C927FA7EA794 /* Toaster.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		BFED2E29E95E065400F8846E0231A970 /* JTAppleCalendar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 851CF7150444685C470082788BA7AD96 /* Build configuration list for PBXNativeTarget "JTAppleCalendar" */;
+			buildPhases = (
+				5D5AC0418099BE9EFEA67AA7EF8A9423 /* Sources */,
+				456A38528F491C16A318D4091CF2E1F8 /* Frameworks */,
+				EB3B104AA552AE0C55DA5E3D426A375A /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JTAppleCalendar;
+			productName = JTAppleCalendar;
+			productReference = D8D36E7E8F5765A60C8C15D3873C6A0D /* JTAppleCalendar.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F87FEB328A0F47BFBBE984A76AEC70C5 /* Pods-NoSmokingPeople */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 371DADB8C7033D5C240E2E0584336417 /* Build configuration list for PBXNativeTarget "Pods-NoSmokingPeople" */;
+			buildPhases = (
+				CB9B59D58510E2395CF3DB72818EBF08 /* Sources */,
+				4AC902DF32ACD486D423F50648B2A045 /* Frameworks */,
+				8B900A28FAE8D34979667D44386AA2D9 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0C3E21BB073396FBD35BF61DC9DCFB78 /* PBXTargetDependency */,
+				8D36811C0D83E57F4481B20BDAFEFBA6 /* PBXTargetDependency */,
+				4F37BDADFF3EB7B8C569B07212288E37 /* PBXTargetDependency */,
+				00D66A8756B7015E64F0E092C1CC23D1 /* PBXTargetDependency */,
+			);
+			name = "Pods-NoSmokingPeople";
+			productName = "Pods-NoSmokingPeople";
+			productReference = 9EA357DAC2FCBF0DA4ED6E5D1396B794 /* Pods_NoSmokingPeople.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -471,27 +589,20 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = E6F33CBBEA63E2DD98370C1D5F27C106 /* Products */;
+			productRefGroup = 3F5F06DCE765D1A24F35B4DDA4E13D15 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				88E9EC28B8B46C3631E6B242B50F4442 /* Alamofire */,
+				BFED2E29E95E065400F8846E0231A970 /* JTAppleCalendar */,
 				7AF8670FDECF80EFCAA3D04318C4B4D1 /* KYDrawerController */,
-				20A8CAA531DC0916D8B898F6C2ACABF9 /* Pods-NoSmokingPeople */,
-				EDBE573DDD9891360D7BB127F3BB5908 /* Toaster */,
+				F87FEB328A0F47BFBBE984A76AEC70C5 /* Pods-NoSmokingPeople */,
+				A3520246C72586334E71547DEFA6135B /* Toaster */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		0D7D50F3619A893910E64A0B250CFB5B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FF68A22CE17C340280B1552B3FFBD6EE /* Pods-NoSmokingPeople-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		1BA042EDEFD683F56F2F5063EC1B98EB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -500,6 +611,18 @@
 				74EBEC8F9277C0056FF08F806E75EB4F /* KYDrawerController.swift in Sources */,
 				FE020C0F86B9EBDE87399EC0136682FE /* KYEmbedDrawerControllerSegue.swift in Sources */,
 				05ED5B55D8AAD30623AEB9B36430D576 /* KYEmbedMainControllerSegue.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A60E46D4B2B15AAABE81E58A6BFFF0B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19AC793E08E7A12D5B62202B608BD419 /* Toast.swift in Sources */,
+				913FC767632C3724042F0C8D641F0FC3 /* ToastCenter.swift in Sources */,
+				0BAA329D64A48D02029A6841CA8BCF86 /* Toaster-dummy.m in Sources */,
+				4A9A719B6A43992F3AEB871D8E704EE6 /* ToastView.swift in Sources */,
+				82ABFCEAD0B60449B75CF6398AD0099A /* ToastWindow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -528,45 +651,69 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		96BE0A07765551A2D240837BFE007F68 /* Sources */ = {
+		5D5AC0418099BE9EFEA67AA7EF8A9423 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AF0AE8C944C8E77FAA24A173B788429A /* Toast.swift in Sources */,
-				611CBFD6BCA4EADF095FB2594776D77E /* ToastCenter.swift in Sources */,
-				7AB60BEB67D261D7B93FEE00390E3667 /* Toaster-dummy.m in Sources */,
-				CB4C4CAA2E3B253B829433840A942FCE /* ToastView.swift in Sources */,
-				CF85F1A29EA155FAEDD59958A8B5B5C7 /* ToastWindow.swift in Sources */,
+				E1CF59B57CC636FECACC39325231B177 /* CalendarEnums.swift in Sources */,
+				6DE7D8CE614DBA55D744EDE81C632AD8 /* CalendarStructs.swift in Sources */,
+				6E8E4422AA0E96DCBB9D329BDFFB881A /* GlobalFunctionsAndExtensions.swift in Sources */,
+				E4E19B08166BF4E9E368134D68E9C7DE /* JTAppleCalendar-dummy.m in Sources */,
+				0383A13C6B7C59A3D8EA592B545DABA0 /* JTAppleCalendarDelegateProtocol.swift in Sources */,
+				7BE39092951B492E5954D8012747BFD0 /* JTAppleCalendarLayout.swift in Sources */,
+				E10E15A8A65DB167DE5046915870021A /* JTAppleCalendarLayoutProtocol.swift in Sources */,
+				18904C96207EA9E40B4E71F855201AD8 /* JTAppleCalendarVariables.swift in Sources */,
+				53D7D34D0142A101314ABFA663AC9D08 /* JTAppleCalendarView.swift in Sources */,
+				F2BB49EF903A70B7B68565CCE233FB83 /* JTAppleCell.swift in Sources */,
+				21A3A4A6EF95F8704DC18E4E5F509D07 /* JTAppleCollectionReusableView.swift in Sources */,
+				87329FA016F0D57803855BCE3E90EC82 /* JTCalendarProtocols.swift in Sources */,
+				42F0A3DBCAC670C336C5C988F6609D98 /* UICollectionViewDelegates.swift in Sources */,
+				F963037A1450F74FAE911C248EED47CE /* UIScrollViewDelegates.swift in Sources */,
+				2856845AB8FCE3B1D319091061F593EF /* UserInteractionFunctions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB9B59D58510E2395CF3DB72818EBF08 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07E0EADA1657252A45A43E91CDB340B0 /* Pods-NoSmokingPeople-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		1077F608375A32C3F1FC12252727DC88 /* PBXTargetDependency */ = {
+		00D66A8756B7015E64F0E092C1CC23D1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = KYDrawerController;
-			target = 7AF8670FDECF80EFCAA3D04318C4B4D1 /* KYDrawerController */;
-			targetProxy = 75EBFEB741CC177205D1D21ECD5DFD7C /* PBXContainerItemProxy */;
+			name = Toaster;
+			target = A3520246C72586334E71547DEFA6135B /* Toaster */;
+			targetProxy = A00CCB033E827E69D5D84CA955379CEE /* PBXContainerItemProxy */;
 		};
-		2F599EAA1A86AC225777DDA96960609E /* PBXTargetDependency */ = {
+		0C3E21BB073396FBD35BF61DC9DCFB78 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Alamofire;
 			target = 88E9EC28B8B46C3631E6B242B50F4442 /* Alamofire */;
-			targetProxy = 0AE694E8F5B1CF4F26BA18D33364A3AF /* PBXContainerItemProxy */;
+			targetProxy = 35384152182B601642B69FDEC5899FFA /* PBXContainerItemProxy */;
 		};
-		B03751C31D507C0EDA46FE9B56435B85 /* PBXTargetDependency */ = {
+		4F37BDADFF3EB7B8C569B07212288E37 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = Toaster;
-			target = EDBE573DDD9891360D7BB127F3BB5908 /* Toaster */;
-			targetProxy = EBF9D6BEAE60162C350AD57FC19185B8 /* PBXContainerItemProxy */;
+			name = KYDrawerController;
+			target = 7AF8670FDECF80EFCAA3D04318C4B4D1 /* KYDrawerController */;
+			targetProxy = 579FE7FCEA1954CC6E16F11601833B27 /* PBXContainerItemProxy */;
+		};
+		8D36811C0D83E57F4481B20BDAFEFBA6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = JTAppleCalendar;
+			target = BFED2E29E95E065400F8846E0231A970 /* JTAppleCalendar */;
+			targetProxy = 06A6BA2B87CEF274A6290812C3CE26B9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		091C35E6324C72404EFD52EEFC283F85 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 011A2918CBF1BD8251BA61E3BE44F82A /* KYDrawerController.xcconfig */;
+			baseConfigurationReference = BF47ADE2022B29C7966092AB09EE7AF1 /* KYDrawerController.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -596,7 +743,38 @@
 			};
 			name = Release;
 		};
-		340EDCC4213B24A49C5F9AE869501F39 /* Release */ = {
+		4D4D0F97371FBD0C3432381B39B12EDA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B3CDEA471FED5148E02419FA64CB071 /* JTAppleCalendar.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/JTAppleCalendar/JTAppleCalendar-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/JTAppleCalendar/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/JTAppleCalendar/JTAppleCalendar.modulemap";
+				PRODUCT_NAME = JTAppleCalendar;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5F823BC67C2BB0DB4CEDE961C5013147 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 38F9024A0F0CC121BAA670A7779DF07C /* Pods-NoSmokingPeople.release.xcconfig */;
 			buildSettings = {
@@ -685,9 +863,41 @@
 			};
 			name = Release;
 		};
+		65FAC7C4A3F5D3B0946950F613945174 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B3CDEA471FED5148E02419FA64CB071 /* JTAppleCalendar.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/JTAppleCalendar/JTAppleCalendar-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/JTAppleCalendar/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/JTAppleCalendar/JTAppleCalendar.modulemap";
+				PRODUCT_NAME = JTAppleCalendar;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		6CD2CF3CB56F8D2390B8CD744515AD17 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F583569FD3A833447790D50CA20C6510 /* Alamofire.xcconfig */;
+			baseConfigurationReference = 2660C1D5E6C18BFD2090DC2348BC762C /* Alamofire.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -717,9 +927,40 @@
 			};
 			name = Release;
 		};
+		896CA12F86BE53C6E087B841D3800E6C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 849999ECC21DDDB46A81CA636CD7592C /* Toaster.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Toaster/Toaster-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Toaster/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Toaster/Toaster.modulemap";
+				PRODUCT_NAME = Toaster;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		972BD31D68F98035DE59A64D32AC1F3A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F583569FD3A833447790D50CA20C6510 /* Alamofire.xcconfig */;
+			baseConfigurationReference = 2660C1D5E6C18BFD2090DC2348BC762C /* Alamofire.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -742,40 +983,6 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		B48DBB9CC213DB4AC6A0B3BA0209A97D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6B4F522B40C3A74AA47B9A3C03214C68 /* Pods-NoSmokingPeople.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-NoSmokingPeople/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-NoSmokingPeople/Pods-NoSmokingPeople.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_NoSmokingPeople;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -842,40 +1049,9 @@
 			};
 			name = Debug;
 		};
-		BA9646E5A12ACCC5DF1112BADB5E4896 /* Debug */ = {
+		BE2CBB11C477A9330295693C553F7120 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A36DA492292A621DE0E039F599648E88 /* Toaster.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/Toaster/Toaster-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Toaster/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Toaster/Toaster.modulemap";
-				PRODUCT_NAME = Toaster;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		F67C9C2FECAB38F61F835A21566AFC0E /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A36DA492292A621DE0E039F599648E88 /* Toaster.xcconfig */;
+			baseConfigurationReference = 849999ECC21DDDB46A81CA636CD7592C /* Toaster.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -905,9 +1081,43 @@
 			};
 			name = Release;
 		};
+		C426B4B6BC0AB70B874CA9994925E90F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B4F522B40C3A74AA47B9A3C03214C68 /* Pods-NoSmokingPeople.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-NoSmokingPeople/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-NoSmokingPeople/Pods-NoSmokingPeople.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_NoSmokingPeople;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		F70DBD28754B62E9F8AE0D5615B00594 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 011A2918CBF1BD8251BA61E3BE44F82A /* KYDrawerController.xcconfig */;
+			baseConfigurationReference = BF47ADE2022B29C7966092AB09EE7AF1 /* KYDrawerController.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -957,6 +1167,15 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		371DADB8C7033D5C240E2E0584336417 /* Build configuration list for PBXNativeTarget "Pods-NoSmokingPeople" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C426B4B6BC0AB70B874CA9994925E90F /* Debug */,
+				5F823BC67C2BB0DB4CEDE961C5013147 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		419E5D95491847CD79841B971A8A3277 /* Build configuration list for PBXNativeTarget "Alamofire" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -966,20 +1185,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6E514ECFE5259E44C8E1991EE7256B26 /* Build configuration list for PBXNativeTarget "Toaster" */ = {
+		851CF7150444685C470082788BA7AD96 /* Build configuration list for PBXNativeTarget "JTAppleCalendar" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BA9646E5A12ACCC5DF1112BADB5E4896 /* Debug */,
-				F67C9C2FECAB38F61F835A21566AFC0E /* Release */,
+				4D4D0F97371FBD0C3432381B39B12EDA /* Debug */,
+				65FAC7C4A3F5D3B0946950F613945174 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8800FCA1A0F54650FC1DE3C2CAED2EDB /* Build configuration list for PBXNativeTarget "Pods-NoSmokingPeople" */ = {
+		AFCE306618BB01FC858FED0A981997BD /* Build configuration list for PBXNativeTarget "Toaster" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B48DBB9CC213DB4AC6A0B3BA0209A97D /* Debug */,
-				340EDCC4213B24A49C5F9AE869501F39 /* Release */,
+				896CA12F86BE53C6E087B841D3800E6C /* Debug */,
+				BE2CBB11C477A9330295693C553F7120 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

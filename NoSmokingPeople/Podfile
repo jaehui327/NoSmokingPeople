@@ -7,6 +7,7 @@ target 'NoSmokingPeople' do
   pod 'KYDrawerController'
   pod 'Alamofire', '~> 4.5' 
   pod 'Toaster'
+  pod 'JTAppleCalendar', '~> 7.0'
   # Pods for NoSmokingPeople
 
 end

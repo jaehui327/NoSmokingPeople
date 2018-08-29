@@ -9,13 +9,18 @@
 import UIKit
 
 class InformationViewController: UIViewController {
-
+    @IBOutlet weak var verLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         let logo = UIImage(named: "invalidName")
         let imageView = UIImageView(image: logo)
         self.navigationItem.titleView = imageView
+        
+        if let version = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String {
+            self.verLabel.text = "버전 : \(version)"
+        }
         // Do any additional setup after loading the view.
     }
 

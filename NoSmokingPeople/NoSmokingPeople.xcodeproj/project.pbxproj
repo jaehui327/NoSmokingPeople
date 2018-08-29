@@ -40,6 +40,7 @@
 		CB9079F61F2C69D1000BF2A6 /* BMHANNA_11yrs_otf.otf in Resources */ = {isa = PBXBuildFile; fileRef = CB9079F41F2C69D1000BF2A6 /* BMHANNA_11yrs_otf.otf */; };
 		CB9079F71F2C69D1000BF2A6 /* BMHANNA_11yrs_otf.otf in Resources */ = {isa = PBXBuildFile; fileRef = CB9079F41F2C69D1000BF2A6 /* BMHANNA_11yrs_otf.otf */; };
 		CBA15300202C0A8C000990EF /* MyCustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA152FF202C0A8C000990EF /* MyCustomTextField.swift */; };
+		CBAC60222132E57100C59777 /* HealthFooterCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAC60212132E57100C59777 /* HealthFooterCollectionViewCell.swift */; };
 		CBCA95701F572A6F00673630 /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCA956F1F572A6F00673630 /* HomeCollectionViewCell.swift */; };
 		CBCA95721F5738D200673630 /* TipCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCA95711F5738D200673630 /* TipCollectionViewCell.swift */; };
 		CBCA95741F57440600673630 /* HealthCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCA95731F57440600673630 /* HealthCollectionViewCell.swift */; };
@@ -109,6 +110,7 @@
 		CB2C2D4F1F57F01B006965F0 /* SettingHeaderTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingHeaderTableViewCell.xib; sourceTree = "<group>"; };
 		CB4A722B2023F11E0052BFDA /* drawerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = drawerViewController.swift; sourceTree = "<group>"; };
 		CB60451D204E6E33005F67ED /* ServerString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerString.swift; sourceTree = "<group>"; };
+		CB618BDC2053CE7700B2189A /* NoSmokingPeople.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NoSmokingPeople.entitlements; sourceTree = "<group>"; };
 		CB64FBAA1F3AB2A100530E16 /* HealthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthViewController.swift; sourceTree = "<group>"; };
 		CB64FBAC1F3AB2AE00530E16 /* DiaryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiaryViewController.swift; sourceTree = "<group>"; };
 		CB64FBAE1F3AB2BC00530E16 /* TipViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TipViewController.swift; sourceTree = "<group>"; };
@@ -116,6 +118,7 @@
 		CB818C53204674E60099E3ED /* InformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationViewController.swift; sourceTree = "<group>"; };
 		CB9079F41F2C69D1000BF2A6 /* BMHANNA_11yrs_otf.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = BMHANNA_11yrs_otf.otf; sourceTree = "<group>"; };
 		CBA152FF202C0A8C000990EF /* MyCustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCustomTextField.swift; sourceTree = "<group>"; };
+		CBAC60212132E57100C59777 /* HealthFooterCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthFooterCollectionViewCell.swift; sourceTree = "<group>"; };
 		CBCA956F1F572A6F00673630 /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
 		CBCA95711F5738D200673630 /* TipCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TipCollectionViewCell.swift; sourceTree = "<group>"; };
 		CBCA95731F57440600673630 /* HealthCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -199,6 +202,7 @@
 		CB1342641F1FB94200E1A1AA /* NoSmokingPeople */ = {
 			isa = PBXGroup;
 			children = (
+				CB618BDC2053CE7700B2189A /* NoSmokingPeople.entitlements */,
 				CBDEA7EC1F39A97900D8F38F /* font */,
 				CB194E941F21D77300D80114 /* LoginViewController.swift */,
 				CB1342671F1FB94200E1A1AA /* SmokingCheckViewController.swift */,
@@ -262,6 +266,7 @@
 				CB64FBAA1F3AB2A100530E16 /* HealthViewController.swift */,
 				CB2C2D431F57EA9D006965F0 /* HealthHeaderCollectionViewCell.swift */,
 				CBCA95731F57440600673630 /* HealthCollectionViewCell.swift */,
+				CBAC60212132E57100C59777 /* HealthFooterCollectionViewCell.swift */,
 			);
 			name = HealthView;
 			sourceTree = "<group>";
@@ -411,8 +416,13 @@
 				TargetAttributes = {
 					CB1342611F1FB94200E1A1AA = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = 2F465AG84W;
+						DevelopmentTeam = AANGG4Q668;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.SafariKeychain = {
+								enabled = 0;
+							};
+						};
 					};
 					CB1342751F1FB94200E1A1AA = {
 						CreatedOnToolsVersion = 8.3.3;
@@ -511,12 +521,14 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-NoSmokingPeople/Pods-NoSmokingPeople-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/JTAppleCalendar/JTAppleCalendar.framework",
 				"${BUILT_PRODUCTS_DIR}/KYDrawerController/KYDrawerController.framework",
 				"${BUILT_PRODUCTS_DIR}/Toaster/Toaster.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JTAppleCalendar.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KYDrawerController.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Toaster.framework",
 			);
@@ -569,6 +581,7 @@
 				CB1342661F1FB94200E1A1AA /* AppDelegate.swift in Sources */,
 				CBCA95721F5738D200673630 /* TipCollectionViewCell.swift in Sources */,
 				CB818C54204674E60099E3ED /* InformationViewController.swift in Sources */,
+				CBAC60222132E57100C59777 /* HealthFooterCollectionViewCell.swift in Sources */,
 				CBA15300202C0A8C000990EF /* MyCustomTextField.swift in Sources */,
 				CB27A668203F0FA300BCE57B /* InquiryViewController.swift in Sources */,
 				CBCA95741F57440600673630 /* HealthCollectionViewCell.swift in Sources */,
@@ -733,16 +746,17 @@
 			baseConfigurationReference = 3E6EB1C4D60919F083230CF9 /* Pods-NoSmokingPeople.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2F465AG84W;
+				DEVELOPMENT_TEAM = AANGG4Q668;
 				INFOPLIST_FILE = NoSmokingPeople/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "jaehui-INU-Appcenter.NoSmokingPeople";
+				PRODUCT_BUNDLE_IDENTIFIER = inu.appcenter.NoSmokingPeople;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -751,16 +765,17 @@
 			baseConfigurationReference = DB7E69E3B6CAE6B47632859D /* Pods-NoSmokingPeople.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2F465AG84W;
+				DEVELOPMENT_TEAM = AANGG4Q668;
 				INFOPLIST_FILE = NoSmokingPeople/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "jaehui-INU-Appcenter.NoSmokingPeople";
+				PRODUCT_BUNDLE_IDENTIFIER = inu.appcenter.NoSmokingPeople;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

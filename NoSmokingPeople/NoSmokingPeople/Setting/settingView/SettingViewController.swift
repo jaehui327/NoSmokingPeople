@@ -89,13 +89,17 @@ extension SettingViewController : UITableViewDelegate, UITableViewDataSource {
             switch indexPath.row {
             case 0:
                 cell.maintitle.text = "현재 버전"
-                cell.versiontitle.text = "v1.01"
+                if let version = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String {
+                    cell.versiontitle.text = "v \(version)"
+                }
                 cell.resetButton.isHidden = true
                 cell.pushnoticeswitch.isHidden = true
                 break
             default:
                 cell.maintitle.text = "최신 버전"
-                cell.versiontitle.text = "v1.01"
+                if let version = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String {
+                    cell.versiontitle.text = "v \(version)"
+                }
                 cell.resetButton.isHidden = true
                 cell.pushnoticeswitch.isHidden = true
                 break

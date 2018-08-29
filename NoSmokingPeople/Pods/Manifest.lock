@@ -1,18 +1,21 @@
 PODS:
   - Alamofire (4.5.0)
+  - JTAppleCalendar (7.0.6)
   - KYDrawerController (2.0.1)
   - Toaster (2.0.4)
 
 DEPENDENCIES:
   - Alamofire (~> 4.5)
+  - JTAppleCalendar (~> 7.0)
   - KYDrawerController
   - Toaster
 
 SPEC CHECKSUMS:
   Alamofire: f28cdffd29de33a7bfa022cbd63ae95a27fae140
+  JTAppleCalendar: 6a942475e33b9ad4dee0a0e14aa4c63adcf4f543
   KYDrawerController: b716cfa5730dc2133a67efcfc28b3b5a2cff6101
   Toaster: f13031c636ef065281bc11857be9a16c7659e04f
 
-PODFILE CHECKSUM: 8ed0f3af300b2763a920d9575a33c284da1a1619
+PODFILE CHECKSUM: 81f1fc686cb6bbf56c0d84872438903ddbb1e15b
 
 COCOAPODS: 1.4.0

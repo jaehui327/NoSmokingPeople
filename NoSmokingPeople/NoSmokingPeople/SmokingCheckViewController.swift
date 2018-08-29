@@ -133,16 +133,24 @@ extension SmokingCheckViewController{
 
     func keyboardHide(){
         //        self.view.frame.height
-        UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping:1, initialSpringVelocity: 1 ,options: .curveEaseOut, animations: {
-            self.view.frame = CGRect(x:0, y:0, width:self.view.frame.width, height: self.view.frame.height)
-        }, completion: nil)
+        UIView.animate(withDuration: 0.5,
+                       delay: 0,
+                       usingSpringWithDamping:1,
+                       initialSpringVelocity: 1,
+                       options: .curveEaseOut,
+                       animations: { self.view.frame = CGRect(x:0, y:0, width:self.view.frame.width, height: self.view.frame.height)},
+                       completion: nil)
     }
 
     func keyboardShow(){
         if self.activeTextField == self.SYTextField {
-            UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 1 ,options: .curveEaseOut, animations: {
-                self.view.frame = CGRect(x:0, y:-80, width:self.view.frame.width, height:self.view.frame.height)
-            }, completion: nil)
+            UIView.animate(withDuration: 0.5,
+                           delay: 0,
+                           usingSpringWithDamping: 1,
+                           initialSpringVelocity: 1,
+                           options: .curveEaseOut,
+                           animations: { self.view.frame = CGRect(x:0, y:-80, width:self.view.frame.width, height:self.view.frame.height) },
+                           completion: nil)
         }
         else if self.activeTextField == self.SNTextField {
             UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 1 ,options: .curveEaseOut, animations: {
